@@ -2,8 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    min-height: 100vh; /* Ensure body is at least full height */
-} 
+}
 
 .banner {
     display: flex;
@@ -17,10 +16,6 @@ body {
     display: flex;
     flex-direction: column; /* Stack logo and title vertically */
     align-items: flex-start; /* Align to the left */
-}
-
-.logo {
-    flex-shrink: 0; /* Prevent the logo from shrinking */
 }
 
 .logo img {
@@ -68,15 +63,16 @@ body {
 
 #seasonal-content {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping of items to the next line */
-    justify-content: center; /* Centers the images */
+    flex-wrap: wrap; /* Allows images to wrap */
+    justify-content: center; /* Center the images */
     margin-top: 20px; /* Space above the image section */
 }
 
 #seasonal-content img {
-    max-width: calc(100% / 6 - 10px); /* Six images per row, with space */
-    width: calc(16.66% - 10px); /* Ensure exactly six images per row */
+    max-width: calc(100% / 6 - 10px); /* Six images per row */
+    width: calc(16.66% - 10px); /* Adjust for spacing */
     margin: 5px; /* Space between images */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .footer {
@@ -84,12 +80,7 @@ body {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed; /* Keep footer at the bottom */
-    bottom: 0; /* Fix it to the bottom of the viewport */
+    position: relative; /* Change to relative */
     width: 100%;
-    z-index: 1000; /* Ensure it stays above other content */
-}
-
-main {
-    padding-bottom: 60px; /* Adjust based on footer height */
+    margin-top: 20px; /* Space above the footer */
 }
