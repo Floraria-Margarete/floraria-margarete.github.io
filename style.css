@@ -26,10 +26,13 @@ body {
     align-items: flex-start; /* Align to the left */
 }
 
-.logo {
+.logo  {
     max-width: 150px; /* Set maximum width */
     height: auto; /* Maintain aspect ratio */
 }
+
+
+
 
 .banner nav {
     flex-grow: 1; /* Allow nav to grow and take up space */
@@ -48,6 +51,12 @@ body {
     margin: 0 15px; /* Spacing between items */
 }
 
+.season-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: center; /* Center the boxes */
+    margin: 20px 0; /* Space around the boxes */
+}
 
 .season {
     border: 1px solid #ccc;
