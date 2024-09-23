@@ -1,85 +1,68 @@
 html, body {
     height: 100%; /* Ensure full height for flexbox layout */
     margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 body {
     display: flex; /* Use flexbox for the body */
     flex-direction: column; /* Stack children vertically */
-    background-color: #F5F5DC;
+    background-color: #EAAC3B;
 }
 
-/* Default Styles for Desktop */
-.dropdown-menu {
-    display: none; /* Hide dropdown by default */
-}
-
+/* Banner and Navigation Styles */
 .banner {
     display: flex;
-    align-items: center;
-    background-color: #4e1212;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #4B5529;
     color: white;
-    padding: 10px;
-    height: 80px;
-    width: 100%; /* Ensure the banner takes the full width */
-
-    position: relative;
+    padding: 20px;
+    height: auto; /* Allow height to adjust */
 }
+
+    .banner h1 {
+        font-size: 50px; /* Increased font size */
+        margin: 0;
+        color: white; /* Ensure the text is visible */
+    }
 
 .logo {
-    position: absolute;
-    top: 10px; /* Adjust to fit */
-    right: 25px; /* Adjust to fit */
-    max-width: 100px;
+    max-width: 200px; /* Adjust size as needed */
     height: auto;
-    max-width: 100%; /* Allow logo to scale down */
-    max-height: 80%; /* Adjust this value to keep it proportional within the banner */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: auto; /* Center the logo */
-    margin-right: auto; /* Center the logo */
-
 }
 
-.banner h1 {
-    font-size: 40px;
-    margin: 0;
-    color: white; /* Ensure the text is visible */
-    position: relative; /* Make it relative to maintain flow */
-    padding-left: 10px; /* Add padding for spacing */
+.desktop-nav {
+    text-align: center; /* Center nav items */
+    margin-top: 10px; /* Space between banner and nav */
 }
 
-.banner nav {
-    flex-grow: 1; /* Allow nav to take up available space */
-    text-align: center; /* Center the nav buttons */
-    margin-left: 150px; /* Offset for the logo */
-}
+    .desktop-nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: inline-flex; /* Align buttons in a row */
+    }
 
-.banner nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: inline-flex; /* Align buttons in a row */
-}
+        .desktop-nav ul li {
+            margin: 0 15px; /* Increased spacing */
+        }
 
-.banner nav ul li {
-    margin: 0 10px;
-}
+            .desktop-nav ul li a {
+                display: inline-block;
+                font-size: 30px; /* Increased font size */
+                background-color: #fff;
+                color: #000000;
+                padding: 10px 20px; /* Adjust padding for buttons */
+                border-radius: 5px;
+                text-decoration: none;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s, color 0.3s;
+            }
 
-.banner nav ul li a {
-    display: inline-block;
-    font-size: 25px;
-    background-color: #fff;
-    color: #000000;
-    padding: 8px 15px; /* Adjust padding for buttons */
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.banner nav ul li a:hover {
-    background-color: #4CAF50;
-    color: black;
-}
+                .desktop-nav ul li a:hover {
+                    background-color: #4CAF50;
+                    color: black;
+                }
 
 /* Dropdown Styles */
 .dropdown {
@@ -94,14 +77,116 @@ body {
     z-index: 100; /* Ensure it's above other content */
 }
 
-/* Mobile Styles */
+/* Main Content Styles */
+.main {
+    flex: 1; /* Allow the main content to grow and fill the space */
+}
+
+#welcome {
+    text-align: center; /* Center text in the welcome section */
+    font-size: 28px; /* Increased font size for welcome text */
+}
+
+.thick-line {
+    border: none; /* Remove default border */
+    height: 4px; /* Set thickness */
+    background-color: #4B5529; /* Set line color */
+    margin: 20px auto; /* Space around the line */
+    width: 50%; /* Set line width */
+}
+
+/* Seasonal Boxes Styles */
+#seasonal-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap */
+    justify-content: center; /* Center the images */
+    margin-top: 20px; /* Space above the image section */
+    max-width: 100%; /* Ensure content does not exceed viewport */
+}
+
+/* Image Box Styles */
+.image-box {
+    border-radius: 241px; /* Rounded corners */
+    padding: 10px; /* Space inside the box */
+    margin: 10px; /* Space outside the box */
+    display: flex; /* Use flexbox to arrange images */
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center images */
+}
+
+    .image-box img {
+        width: 100%; /* Full width of the parent container */
+        max-width: 350px; /* Increased maximum width for larger images */
+        height: auto; /* Maintain aspect ratio */
+        margin: 5px; /* Space between images */
+    }
+
+/* Seasonal Boxes Styles */
+.season-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: center; /* Center the boxes */
+    margin: 20px 0; /* Space around the boxes */
+}
+
+.season {
+    border: 5px solid #000;
+    padding: 30px; /* Increased padding for larger boxes */
+    width: 220px; /* Increased width for each box */
+    text-align: center;
+    cursor: pointer;
+    margin: 15px; /* Increased space between boxes */
+    font-size: 24px; /* Increased font size */
+    background-color: white; /* Set background to white */
+
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+    .season:hover {
+        background-color: #4CAF50; /* Change to green on hover */
+    }
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4B5529;
+    color: white;
+    padding: 15px 10px; /* Adjust padding if needed */
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping of footer items */
+}
+
+
+    .footer .contact {
+        font-size: 18px; /* Font size for contact */
+        white-space: normal; /* Allow wrapping of text */
+        overflow-wrap: break-word; /* Ensure long words break to the next line */
+        flex: 1; /* Allow this item to grow and shrink */
+        text-align: center; /* Center-align */
+        margin: 5px; /* Margin for spacing */
+    }
+
+    .footer .follow-us, .footer .location {
+        font-size: 18px; /* Font size for follow and location */
+        white-space: normal; /* Allow wrapping of text */
+        overflow-wrap: break-word; /* Ensure long words break to the next line */
+        flex: 1; /* Allow these items to grow and shrink */
+        text-align: center; /* Center-align */
+        margin: 5px; /* Margin for spacing */
+    }
+
+    .footer .location {
+        margin-right: 20px; /* Add space after the location text */
+    }
+
+/* Media Queries for responsive design */
 @media (max-width: 800px) {
     .banner {
         flex-direction: column; /* Stack items vertically */
         height: auto; /* Allow height to adjust */
         padding: 20px; /* Increased padding */
-        width: 100%; /* Ensure the banner takes the full width */
-
     }
 
     .logo {
@@ -110,14 +195,10 @@ body {
     }
 
     .banner h1 {
-        font-size: 20px; /* Smaller font size for mobile */
+        font-size: 30px; /* Smaller font size for mobile */
     }
 
-    .dropdown {
-        display: block; /* Show dropdown button */
-    }
-
-    .banner nav {
+    .desktop-nav {
         display: none; /* Hide standard nav on mobile */
     }
 
@@ -129,131 +210,37 @@ body {
         cursor: pointer; /* Change cursor to pointer */
     }
 
-    .dropbtn:hover {
-        color: #4CAF50; /* Change color on hover */
-    }
-
-    .dropdown-menu {
-        display: none; /* Hide dropdown by default */
-    }
-
-    .dropdown-menu.active {
-        display: block; /* Show dropdown when active */
-    }
+        .dropbtn:hover {
+            color: #4CAF50; /* Change color on hover */
+        }
 }
 
-.main {
-    flex: 1; /* Allow the main content to grow and fill the space */
-}
-
-.image-box {
-    border-radius: 241px; /* Rounded corners */
-    padding: 10px; /* Space inside the box */
-    margin: 10px; /* Space outside the box */
-    display: flex; /* Use flexbox to arrange images */
-    flex-wrap: wrap; /* Allow images to wrap to the next line */
-    justify-content: center; /* Center images */
-}
-
-.image-box img {
-    max-width: 150px; /* Set maximum width for images */
-    height: auto; /* Maintain aspect ratio */
-    margin: 5px; /* Space between images */
-}
-
-/* Seasonal boxes and footer styles remain unchanged */
-
-.season-boxes {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping to the next line */
-    justify-content: center; /* Center the boxes */
-    margin: 20px 0; /* Space around the boxes */
-}
-
-.season {
-    border: 5px solid #000;
-    padding: 20px;
-    width: 150px; /* Set the width for each box */
-    text-align: center;
-    cursor: pointer;
-    margin: 10px; /* Space between boxes */
-    font-size: 20px;
-    
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-.season:hover {
-    background-color: #f1f1f1; /* Highlight on hover */
-}
-
-#seasonal-content {
-    display: flex;
-    flex-wrap: wrap; /* Allows images to wrap */
-    justify-content: center; /* Center the images */
-    margin-top: 20px; /* Space above the image section */
-}
-
-#seasonal-content img {
-    max-width: calc(100% / 6 - 10px); /* Six images per row */
-    width: calc(16.66% - 10px); /* Adjust for spacing */
-    margin: 5px; /* Space between images */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.footer {
-    background-color: #4e1212;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    margin-top: 20px; /* Space above the footer */
-}
-
-#welcome {
-    text-align: center; /* Center text in the welcome section */
-}
-
-.thick-line {
-    border: none; /* Remove default border */
-    height: 4px; /* Set thickness */
-    background-color: white; /* Set line color */
-    margin: 20px auto; /* Space around the line */
-    width: 50%; /* Set line width */
-}
-
-
-/* Media Queries for responsive design */
+/* Image Resizing for Different Screen Sizes */
 @media (max-width: 1200px) {
     #seasonal-content img {
-        max-width: calc(100% / 5 - 10px); /* Five images per row */
-        width: calc(20% - 10px); /* Adjust for spacing */
+        width: calc(25% - 10px); /* Four images per row */
+        max-width: calc(25% - 10px); /* Ensure four images per row */
     }
 }
 
 @media (max-width: 900px) {
     #seasonal-content img {
-        max-width: calc(100% / 4 - 10px); /* Four images per row */
-        width: calc(25% - 10px); /* Adjust for spacing */
+        width: calc(33.33% - 10px); /* Three images per row */
+        max-width: calc(33.33% - 10px); /* Ensure three images per row */
     }
 }
 
 @media (max-width: 600px) {
     #seasonal-content img {
-        max-width: calc(100% / 3 - 10px); /* Three images per row */
-        width: calc(33.33% - 10px); /* Adjust for spacing */
+        width: calc(50% - 10px); /* Two images per row */
+        max-width: calc(50% - 10px); /* Ensure two images per row */
     }
 }
 
 @media (max-width: 400px) {
     #seasonal-content img {
-        max-width: calc(100% / 2 - 10px); /* Two images per row */
-        width: calc(50% - 10px); /* Adjust for spacing */
+        width: 100%; /* One image per row */
+        max-width: 100%; /* Full width */
     }
 }
 
-@media (max-width: 300px) {
-    #seasonal-content img {
-        max-width: 100%; /* One image per row */
-        width: 100%; /* Full width */
-    }
-}
