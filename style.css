@@ -14,21 +14,60 @@ body {
 
 .banner {
     display: flex;
-    align-items: center; /* Vertically center items */
-    background-color: #4CAF50; /* Banner color */
+    align-items: center;
+    background-color: #4CAF50;
     color: white;
-    padding: 15px;
+    padding: 10px;
+    height: 80px;
+    position: relative; /* Allows for absolute positioning of logo */
 }
 
-.logo-container {
-    display: flex;
-    flex-direction: column; /* Stack logo and title vertically */
-    align-items: flex-start; /* Align to the left */
-}
-
-.logo  {
-    max-width: 150px; /* Set maximum width */
+.logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 0px; /* Adjust position */
+    right: 29px; /* Adjust position */
+    max-width: 100px; /* Shrink logo size */
     height: auto; /* Maintain aspect ratio */
+}
+
+.banner h1 {
+    font-size: 40px; /* Store name size */
+    margin: 0; /* Remove margin */
+    position: absolute; /* Position the store name absolutely */
+    top: 30px; /* Adjust position */
+    left: 10px; /* Adjust position */
+}
+
+.banner nav {
+    flex-grow: 1; /* Allow nav to take up available space */
+    text-align: center; /* Center the nav buttons */
+    margin-left: 150px; /* Offset for the logo */
+}
+
+.banner nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex; /* Align buttons in a row */
+}
+
+.banner nav ul li {
+    margin: 0 10px;
+}
+
+.banner nav ul li a {
+    display: inline-block;
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 8px 15px; /* Adjust padding for buttons */
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.banner nav ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
 }
 
 .image-box {
@@ -47,38 +86,7 @@ body {
     margin: 5px; /* Space between images */
 }
 
-
-.banner nav {
-    flex-grow: 1; /* Allow the nav to grow and take up space */
-    text-align: center; /* Center text inside the nav */
-}
-
-.banner nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: inline-flex; /* Use inline-flex to keep items in a row */
-}
-
-.banner nav ul li {
-    margin: 0 10px; /* Space between buttons */
-}
-
-.banner nav ul li a {
-    display: inline-block; /* Make the link behave like a block for padding */
-    background-color: #fff; /* Background color for the button */
-    color: #4CAF50; /* Text color */
-    padding: 10px 20px; /* Space inside the button */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-    transition: background-color 0.3s, color 0.3s; /* Transition effects */
-}
-
-.banner nav ul li a:hover {
-    background-color: #4CAF50; /* Change background on hover */
-    color: white; /* Change text color on hover */
-}
-
+/* Seasonal boxes and footer styles remain unchanged */
 
 .season-boxes {
     display: flex;
