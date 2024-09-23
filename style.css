@@ -75,3 +75,15 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+#seasonal-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items to the next line */
+    justify-content: center; /* Centers the images */
+    margin-top: 20px; /* Space above the image section */
+}
+
+#seasonal-content img {
+    max-width: calc(100% / 6 - 10px); /* Six images per row, with space */
+    margin: 5px; /* Space between images */
+}
