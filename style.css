@@ -10,92 +10,122 @@ body {
 }
 
 /* Default Styles for Desktop */
-.dropdown-menu {
-    display: none; /* Hide dropdown by default */
-}
-
 .banner {
     display: flex;
-    align-items: center;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space items apart */
     background-color: #4e1212;
     color: white;
-    padding: 10px;
-    height: 80px;
-    position: relative;
-}
-
-.logo {
-    position: absolute;
-    top: 10px; /* Adjust to fit */
-    right: 10px; /* Adjust to fit */
-    max-width: 100px;
-    height: auto;
+    padding: 10px 20px; /* Add more padding */
+    height: 100px; /* Set a fixed height */
+    position: relative; /* Allows for absolute positioning of logo */
 }
 
 .banner h1 {
-    font-size: 40px;
-    margin: 0;
-    color: white; /* Ensure the text is visible */
-    position: relative; /* Make it relative to maintain flow */
-    padding-left: 10px; /* Add padding for spacing */
+    font-size: 40px; /* Store name size */
+    margin: 0; /* Remove margin */
+    color: white; /* Change color to white for better contrast */
 }
 
+.logo {
+    max-width: 100px; /* Shrink logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation Styles */
 .banner nav {
     flex-grow: 1; /* Allow nav to take up available space */
     text-align: center; /* Center the nav buttons */
     margin-left: 150px; /* Offset for the logo */
 }
 
+.banner nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex; /* Align buttons in a row */
+}
+
+.banner nav ul li {
+    margin: 0 10px;
+}
+
+.banner nav ul li a {
+    display: inline-block;
+    font-size: 25px;
+    background-color: #fff;
+    color: #000000;
+    padding: 8px 15px; /* Adjust padding for buttons */
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.banner nav ul li a:hover {
+    background-color: #4CAF50;
+    color: black;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none; /* Hide dropdown button on desktop */
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Positioning */
+    background-color: white; /* Dropdown background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Ensure it's above other content */
+}
+
 /* Mobile Styles */
 @media (max-width: 600px) {
     .banner {
-        flex-direction: column; /* Stack items */
-        height: auto; /* Adjust height for mobile */
-        padding: 10px 0; /* Add padding for spacing */
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow height to adjust */
+        padding: 20px; /* Increased padding */
+    }
+
+    .logo {
+        max-width: 80px; /* Smaller size for mobile */
+        margin: 10px 0; /* Add some margin */
     }
 
     .banner h1 {
         font-size: 20px; /* Smaller font size for mobile */
-        margin: 5px 0; /* Adjust margins */
-        text-align: center; /* Center align text */
     }
 
-    .logo {
-        position: relative; /* Change to relative for flow */
-        max-width: 80px; /* Smaller logo size for mobile */
+    .dropdown {
+        display: block; /* Show dropdown button */
     }
 
     .banner nav {
         display: none; /* Hide standard nav on mobile */
     }
 
-    .dropdown {
-        display: block; /* Show dropdown button */
-        margin: auto; /* Center the dropdown */
+    .dropbtn {
+        font-size: 30px; /* Increase size of dropdown button */
+        background: transparent; /* Make background transparent */
+        border: none; /* Remove border */
+        color: white; /* Set button text color */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+
+    .dropbtn:hover {
+        color: #4CAF50; /* Change color on hover */
     }
 
     .dropdown-menu {
         display: none; /* Hide dropdown by default */
-        position: absolute; /* Positioning */
-        background-color: white; /* Dropdown background */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 100; /* Ensure it's above other content */
     }
 
-    .dropbtn {
-        font-size: 20px; /* Increase size of the dropdown button */
-    }
-
-    .dropbtn:hover + .dropdown-menu,
-    .dropdown-menu:hover {
-        display: block; /* Show dropdown on hover */
+    .dropdown-menu.active {
+        display: block; /* Show dropdown when active */
     }
 }
 
-.main {
-    flex: 1; /* Allow the main content to grow and fill the space */
-}
-
+/* Image Box Styles */
 .image-box {
     border-radius: 241px; /* Rounded corners */
     padding: 10px; /* Space inside the box */
@@ -112,7 +142,6 @@ body {
 }
 
 /* Seasonal boxes and footer styles remain unchanged */
-
 .season-boxes {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping to the next line */
@@ -128,7 +157,6 @@ body {
     cursor: pointer;
     margin: 10px; /* Space between boxes */
     font-size: 20px;
-    
     transition: background-color 0.3s; /* Smooth transition */
 }
 
