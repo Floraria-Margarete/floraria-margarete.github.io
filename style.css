@@ -31,6 +31,21 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
+.image-box {
+    border: 2px solid #ccc; /* Box border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Space inside the box */
+    margin: 10px; /* Space outside the box */
+    display: inline-block; /* Allows boxes to align next to each other */
+    text-align: center; /* Center content */
+    max-width: 150px; /* Set a max width for the box */
+}
+
+.image-box img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .banner nav {
     flex-grow: 1; /* Allow nav to grow and take up space */
     text-align: center; /* Center the nav items */
