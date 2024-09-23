@@ -16,16 +16,18 @@ body {
         flex-direction: column; /* Stack items vertically */
         height: auto; /* Allow height to adjust */
         padding: 10px; /* Adjust padding for smaller screens */
+        align-items: center; /* Center items in the banner */
     }
 
     .logo-container {
         align-items: center; /* Center logo and title */
         margin-bottom: 10px; /* Space below the logo */
+        text-align: center; /* Center text */
     }
 
     .banner h1 {
         font-size: 24px; /* Smaller font size for the store name */
-        text-align: center; /* Center the store name */
+        margin: 5px 0; /* Add some margin for spacing */
     }
 
     nav {
@@ -35,32 +37,15 @@ body {
     .banner nav ul {
         flex-direction: column; /* Stack nav items vertically */
         align-items: center; /* Center nav items */
+        padding: 0; /* Remove default padding */
     }
 
     .banner nav ul li {
         margin: 5px 0; /* Vertical spacing between buttons */
     }
 
-    .season-boxes {
-        flex-direction: column; /* Stack seasonal boxes vertically */
-        align-items: center; /* Center the boxes */
-    }
-
-    .season {
-        width: 100%; /* Full width for seasonal boxes */
-        text-align: center; /* Center text */
-        padding: 15px; /* Adjust padding for touch targets */
-    }
-
-    #seasonal-content img {
-        max-width: 90%; /* Allow images to take up more width */
-        width: auto; /* Adjust width automatically */
-        margin: 10px 0; /* Vertical spacing between images */
-    }
-
-    .footer {
-        text-align: center; /* Center footer content */
-        padding: 15px; /* More padding for mobile */
+    .banner nav ul li a {
+        padding: 10px 15px; /* Adjust padding for buttons */
     }
 }
 
