@@ -21,7 +21,7 @@ body {
     color: white;
     padding: 10px;
     height: 80px;
-        width: 100%; /* Ensure the banner takes the full width */
+    width: 100%; /* Ensure the banner takes the full width */
 
     position: relative;
 }
@@ -29,9 +29,15 @@ body {
 .logo {
     position: absolute;
     top: 10px; /* Adjust to fit */
-    right: 10px; /* Adjust to fit */
+    right: 25px; /* Adjust to fit */
     max-width: 100px;
     height: auto;
+    max-width: 100%; /* Allow logo to scale down */
+    max-height: 80%; /* Adjust this value to keep it proportional within the banner */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: auto; /* Center the logo */
+    margin-right: auto; /* Center the logo */
+
 }
 
 .banner h1 {
