@@ -139,6 +139,18 @@ body {
     margin-top: 20px; /* Space above the footer */
 }
 
+#welcome {
+    text-align: center; /* Center text in the welcome section */
+}
+
+.thick-line {
+    border: none; /* Remove default border */
+    height: 4px; /* Set thickness */
+    background-color: white; /* Set line color */
+    margin: 20px auto; /* Space around the line */
+    width: 50%; /* Set line width */
+}
+
 /* Media Queries for responsive design */
 @media (max-width: 1200px) {
     #seasonal-content img {
