@@ -10,43 +10,38 @@ body {
 
 }
 
+/* Default Styles for Desktop */
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
+}
+
 /* Mobile Styles */
 @media (max-width: 600px) {
-    .banner {
-        flex-direction: column; /* Stack items vertically */
-        height: auto; /* Allow height to adjust */
-        padding: 10px; /* Adjust padding for smaller screens */
-        align-items: center; /* Center items in the banner */
+    .dropdown {
+        display: block; /* Show dropdown button */
     }
 
-    .logo-container {
-        align-items: center; /* Center logo and title */
-        margin-bottom: 10px; /* Space below the logo */
-        text-align: center; /* Center text */
+    .banner nav {
+        display: none; /* Hide standard nav on mobile */
     }
 
-    .banner h1 {
-        font-size: 24px; /* Smaller font size for the store name */
-        margin: 5px 0; /* Add some margin for spacing */
+    .dropdown-menu {
+        display: none; /* Hide dropdown by default */
+        position: absolute; /* Positioning */
+        background-color: white; /* Dropdown background */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100; /* Ensure it's above other content */
     }
 
-    nav {
-        margin-top: 10px; /* Space above nav */
+    .dropbtn:hover + .dropdown-menu,
+    .dropdown-menu:hover {
+        display: block; /* Show dropdown on hover */
     }
+}
 
-    .banner nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-        align-items: center; /* Center nav items */
-        padding: 0; /* Remove default padding */
-    }
-
-    .banner nav ul li {
-        margin: 5px 0; /* Vertical spacing between buttons */
-    }
-
-    .banner nav ul li a {
-        padding: 10px 15px; /* Adjust padding for buttons */
-    }
+/* Optional: Style for Stay Here */
+.stay-here {
+    cursor: pointer; /* Change cursor to pointer */
 }
 
 .main {
