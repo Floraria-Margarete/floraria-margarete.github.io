@@ -24,7 +24,7 @@ body {
     .banner h1 {
         font-size: 50px; /* Increased font size */
         margin: 0;
-        color: white; /* Ensure the text is visible */
+        color: #ffffff; /* Ensure the text is visible */
     }
 
 .logo {
@@ -50,7 +50,7 @@ body {
             .desktop-nav ul li a {
                 display: inline-block;
                 font-size: 30px; /* Increased font size */
-                background-color: #fff;
+                background-color: #d0d0d0;
                 color: #000000;
                 padding: 10px 20px; /* Adjust padding for buttons */
                 border-radius: 5px;
@@ -137,7 +137,7 @@ body {
     cursor: pointer;
     margin: 15px; /* Increased space between boxes */
     font-size: 24px; /* Increased font size */
-    background-color: white; /* Set background to white */
+    background-color: #d0d0d0; /* Set background to white */
 
     transition: background-color 0.3s; /* Smooth transition */
 }
@@ -151,7 +151,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #4B5529;
-    color: white;
+    color: #ffffff;
     padding: 15px 10px; /* Adjust padding if needed */
     width: 100%;
     margin-top: 20px;
