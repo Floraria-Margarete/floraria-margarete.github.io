@@ -10,29 +10,36 @@ body {
 }
 
 /* Default Styles for Desktop */
-.banner {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Space items apart */
-    background-color: #4e1212;
-    color: white;
-    padding: 10px 20px; /* Add more padding */
-    height: 100px; /* Set a fixed height */
-    position: relative; /* Allows for absolute positioning of logo */
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
 }
 
-.banner h1 {
-    font-size: 40px; /* Store name size */
-    margin: 0; /* Remove margin */
-    color: white; /* Change color to white for better contrast */
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: #4e1212;
+    color: white;
+    padding: 10px;
+    height: 80px;
+    position: relative;
 }
 
 .logo {
-    max-width: 100px; /* Shrink logo size */
-    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 10px; /* Adjust to fit */
+    right: 10px; /* Adjust to fit */
+    max-width: 100px;
+    height: auto;
 }
 
-/* Navigation Styles */
+.banner h1 {
+    font-size: 40px;
+    margin: 0;
+    color: white; /* Ensure the text is visible */
+    position: relative; /* Make it relative to maintain flow */
+    padding-left: 10px; /* Add padding for spacing */
+}
+
 .banner nav {
     flex-grow: 1; /* Allow nav to take up available space */
     text-align: center; /* Center the nav buttons */
@@ -125,7 +132,10 @@ body {
     }
 }
 
-/* Image Box Styles */
+.main {
+    flex: 1; /* Allow the main content to grow and fill the space */
+}
+
 .image-box {
     border-radius: 241px; /* Rounded corners */
     padding: 10px; /* Space inside the box */
@@ -142,6 +152,7 @@ body {
 }
 
 /* Seasonal boxes and footer styles remain unchanged */
+
 .season-boxes {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping to the next line */
@@ -157,6 +168,7 @@ body {
     cursor: pointer;
     margin: 10px; /* Space between boxes */
     font-size: 20px;
+    
     transition: background-color 0.3s; /* Smooth transition */
 }
 
@@ -198,6 +210,7 @@ body {
     margin: 20px auto; /* Space around the line */
     width: 50%; /* Set line width */
 }
+
 
 /* Media Queries for responsive design */
 @media (max-width: 1200px) {
