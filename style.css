@@ -5,7 +5,6 @@ body {
 
 .banner {
     display: flex;
-    justify-content: space-between; /* Space between elements */
     align-items: center; /* Vertically center items */
     background-color: #4CAF50; /* Banner color */
     color: white;
@@ -35,12 +34,17 @@ body {
 .banner nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0; /* Ensure no margin */
 }
 
 .banner nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Keep items inline */
+    margin: 0 15px; /* Spacing between items */
+}
+
+/* Centering the nav within the banner */
+.banner nav {
+    flex: 1; /* Make nav flex-grow and take up space */
 }
 
 .season-boxes {
