@@ -45,6 +45,27 @@ body {
     margin: 0 15px; /* Spacing between items */
 }
 
+.season-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: center; /* Center the boxes */
+    margin: 20px 0; /* Space around the boxes */
+}
+
+.season {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 150px; /* Set the width for each box */
+    text-align: center;
+    cursor: pointer;
+    margin: 10px; /* Space between boxes */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.season:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}
+
 #seasonal-content {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping of items to the next line */
