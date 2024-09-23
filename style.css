@@ -13,18 +13,24 @@ body {
 /* Banner and Navigation Styles */
 .banner {
     display: flex;
+    background-image: url('https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/banner/daisy.jpg'); /* Background image for the border */
+    background-size: cover; /* Stretch the image to cover the entire area */
+    background-repeat: no-repeat; /* Do not repeat the image */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     background-color: #4B5529;
-    color: white;
+    color: #ffffff;
     padding: 20px;
     height: auto; /* Allow height to adjust */
 }
 
     .banner h1 {
-        font-size: 50px; /* Increased font size */
-        margin: 0;
-        color: #ffffff; /* Ensure the text is visible */
+        background-color: #ffffff; /* Green background */
+        color: black; /* Black text */
+        padding: 20px; /* Space around the text */
+        border-radius: 10px; /* Optional: rounded corners */
+        display: inline-block; /* Make the h1 size fit content */
+        margin: 0; /* Remove default margins */
     }
 
 .logo {
@@ -50,7 +56,7 @@ body {
             .desktop-nav ul li a {
                 display: inline-block;
                 font-size: 30px; /* Increased font size */
-                background-color: #d0d0d0;
+                background-color: #fff;
                 color: #000000;
                 padding: 10px 20px; /* Adjust padding for buttons */
                 border-radius: 5px;
@@ -130,14 +136,14 @@ body {
 }
 
 .season {
-    border: 5px solid #000;
-    padding: 30px; /* Increased padding for larger boxes */
-    width: 220px; /* Increased width for each box */
+    border: 3px solid #000;
+    padding: 12px; /* Increased padding for larger boxes */
+    width: 150px; /* Increased width for each box */
     text-align: center;
     cursor: pointer;
-    margin: 15px; /* Increased space between boxes */
+    margin: 20px; /* Increased space between boxes */
     font-size: 24px; /* Increased font size */
-    background-color: #d0d0d0; /* Set background to white */
+    background-color: white; /* Set background to white */
 
     transition: background-color 0.3s; /* Smooth transition */
 }
@@ -151,7 +157,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #4B5529;
-    color: #ffffff;
+    color: white;
     padding: 15px 10px; /* Adjust padding if needed */
     width: 100%;
     margin-top: 20px;
@@ -243,4 +249,3 @@ body {
         max-width: 100%; /* Full width */
     }
 }
-
