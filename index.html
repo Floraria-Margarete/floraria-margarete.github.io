@@ -3,29 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Her Flower Shop</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
-        .header { text-align: center; padding: 20px; }
-        .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
-        .gallery img { width: 200px; height: 200px; object-fit: cover; }
-        .contact { margin-top: 40px; }
-    </style>
+    <title>Floraria Margarete</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Her Flower Shop</h1>
-        <p>Beautiful Flowers, Beautiful Moments</p>
-    </div>
-    <div class="gallery">
-        <img src="flower1.jpg" alt="Flower 1">
-        <img src="flower2.jpg" alt="Flower 2">
-        <img src="flower4.jpg" alt="Flower 3">
-    </div>
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <p>Location: 123 Bloom Street, City</p>
-        <p>Email: herflowershop@example.com</p>
-    </div>
+
+    <!-- Banner -->
+    <header class="banner">
+        <div class="logo">[Logo Placeholder]</div>
+        <h1>Floraria Margarete</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#seasonal-offering">Seasonal Offering</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="welcome">
+            <h2>Welcome to the site!</h2>
+            <hr>
+            <div class="season-boxes">
+                <div class="season" onclick="toggleSeason('xmas')">X-MAS and New Years</div>
+                <div class="season" onclick="toggleSeason('graduation')">Graduations</div>
+                <div class="season" onclick="toggleSeason('birthday')">Birthdays</div>
+                <div class="season" onclick="toggleSeason('halloween')">Halloween</div>
+                <div class="season" onclick="toggleSeason('easter')">Easter</div>
+                <div class="season" onclick="toggleSeason('summer')">Summer</div>
+                <div class="season" onclick="toggleSeason('current')">Current Seasonal Offering</div>
+            </div>
+            <div id="seasonal-content"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact: your.email@example.com</p>
+        <p>Follow us on <a href="https://facebook.com">Facebook</a></p>
+        <p>Location: Your Address Here</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
