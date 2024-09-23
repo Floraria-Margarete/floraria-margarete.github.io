@@ -4,10 +4,21 @@ body {
 }
 
 .banner {
+    display: flex;
+    justify-content: space-between; /* Distributes space between elements */
+    align-items: center; /* Vertically centers items */
     background-color: #4CAF50; /* Banner color */
     color: white;
     padding: 15px;
-    text-align: center;
+}
+
+.logo {
+    margin-left: auto; /* Push the logo to the right */
+}
+
+.logo img {
+    max-width: 150px; /* Set maximum width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .banner nav ul {
