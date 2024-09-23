@@ -15,7 +15,7 @@ function toggleSeason(season) {
         // Add other seasonal images here
     };
 
-    document.querySelector('.dropbtn').addEventListener('click', function() {
+document.querySelector('.dropbtn').addEventListener('click', function() {
     const dropdown = document.querySelector('.dropdown-menu');
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 });
@@ -23,6 +23,7 @@ function toggleSeason(season) {
 document.querySelector('.stay-here').addEventListener('click', function() {
     document.querySelector('.dropdown-menu').style.display = 'none'; // Close dropdown
 });
+
 
 
     if (images[season]) {
