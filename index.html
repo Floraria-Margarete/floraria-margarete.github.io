@@ -7,51 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- Banner -->
-<header class="banner">
-    <div class="logo-container">
-        <div class="logo">
-            <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.jpg" alt="Floraria Margarete Logo" />
+    <header class="banner">
+        <div class="logo-container">
+            <img src="logo-url-here" alt="Floraria Margarete Logo" />
+            <h1>Floraria Margarete</h1>
         </div>
-        <h1>Floraria Margarete</h1>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#location">Location</a></li>
-            <li><a href="#pictures">Pictures</a></li>
-            <li><a href="#seasonal-offering">Seasonal Offering</a></li>
-        </ul>
-    </nav>
-</header>
-
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#seasonal-offering">Seasonal Offering</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Main Content -->
-    <main>
-        <section id="welcome">
-            <h2>Welcome to the site!</h2>
-            <hr>
-            <div class="season-boxes">
-                <div class="season" onclick="toggleSeason('xmas')">X-MAS and New Years</div>
-                <div class="season" onclick="toggleSeason('graduation')">Graduations</div>
-                <div class="season" onclick="toggleSeason('birthday')">Birthdays</div>
-                <div class="season" onclick="toggleSeason('halloween')">Halloween</div>
-                <div class="season" onclick="toggleSeason('easter')">Easter</div>
-                <div class="season" onclick="toggleSeason('summer')">Summer</div>
-                <div class="season" onclick="toggleSeason('current')">Current Seasonal Offering</div>
-            </div>
-            <div id="seasonal-content"></div>
-        </section>
-    </main>
+    <div class="main">
+        <main>
+            <section id="welcome">
+                <h2>Welcome to the site!</h2>
+                <hr>
+                <div class="season-boxes">
+                    <div class="season" onclick="toggleSeason('xmas')">X-MAS and New Years</div>
+                    <div class="season" onclick="toggleSeason('graduation')">Graduations</div>
+                    <div class="season" onclick="toggleSeason('birthday')">Birthdays</div>
+                    <div class="season" onclick="toggleSeason('halloween')">Halloween</div>
+                    <div class="season" onclick="toggleSeason('easter')">Easter</div>
+                    <div class="season" onclick="toggleSeason('summer')">Summer</div>
+                    <div class="season" onclick="toggleSeason('current')">Current Seasonal Offering</div>
+                </div>
+                <div id="seasonal-content"></div>
+            </section>
+        </main>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>Contact: +40 755 676 073</p>
-        <p>Follow us on <a href="https://www.facebook.com/Margareta.margarete.5">Facebook</a></p>
-        <p>Strada Margaretelor 5, Sâncraiu de Mureș, Romania</p>
+        <p>Contact: your.email@example.com</p>
+        <p>Follow us on <a href="https://facebook.com">Facebook</a></p>
+        <p>Location: Your Address Here</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html>
