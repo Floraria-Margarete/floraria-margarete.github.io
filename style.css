@@ -1,7 +1,15 @@
+html, body {
+    height: 100%; /* Ensure full height for flexbox layout */
+    margin: 0; /* Remove default margin */
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    display: flex; /* Use flexbox for the body */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.main {
+    flex: 1; /* Allow the main content to grow and fill the space */
 }
 
 .banner {
@@ -80,7 +88,6 @@ body {
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative; /* Change to relative */
     width: 100%;
     margin-top: 20px; /* Space above the footer */
 }
