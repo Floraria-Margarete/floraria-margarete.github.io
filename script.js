@@ -15,6 +15,16 @@ function toggleSeason(season) {
         // Add other seasonal images here
     };
 
+    document.querySelector('.dropbtn').addEventListener('click', function() {
+    const dropdown = document.querySelector('.dropdown-menu');
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+});
+
+document.querySelector('.stay-here').addEventListener('click', function() {
+    document.querySelector('.dropdown-menu').style.display = 'none'; // Close dropdown
+});
+
+
     if (images[season]) {
         const box = document.createElement('div');
         box.className = 'image-box'; // Single box for all images
