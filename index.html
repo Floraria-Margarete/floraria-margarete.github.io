@@ -8,46 +8,53 @@
 </head>
 <body>
     <!-- Banner -->
-<header class="banner">
-    <div class="logo-container">
-        <h1>Floraria Margarete</h1>
-        <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.jpg" alt="Floraria Margarete Logo" class="logo" />
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">☰</button> <!-- Three-line dropdown button -->
-        <div class="dropdown-menu">
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#pictures">Pictures</a></li>
-                    <li><a href="#seasonal-offering">Seasonal Offering</a></li>
-                    <li class="stay-here">Stay Here</li> <!-- Option to close the dropdown -->
-                </ul>
-            </nav>
+    <header class="banner">
+        <div class="logo-container">
+            <h1>Floraria Margarete</h1>
+            <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.jpg" alt="Floraria Margarete Logo" class="logo" />
         </div>
-    </div>
-</header>
-
+        <div class="dropdown">
+            <button class="dropbtn">☰</button> <!-- Three-line dropdown button -->
+            <div class="dropdown-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#pictures">Pictures</a></li>
+                        <li><a href="#seasonal-offering">Seasonal Offering</a></li>
+                        <li class="stay-here">Stay Here</li> <!-- Option to close the dropdown -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#seasonal-offering">Seasonal Offering</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Main Content -->
     <div class="main">
         <main>
-<section id="welcome">
-    <h2>Welcome to my flower site.</h2>
-    <p>Click on one of the seasons below to get a taste of what I do, or choose one of the pages above for their content.</p>
-    <hr class="thick-line">
-    <div class="season-boxes">
-        <div class="season" onclick="toggleSeason('xmas')">X-MAS and New Years</div>
-        <div class="season" onclick="toggleSeason('graduation')">Graduations</div>
-        <div class="season" onclick="toggleSeason('birthday')">Birthdays</div>
-        <div class="season" onclick="toggleSeason('halloween')">Halloween</div>
-        <div class="season" onclick="toggleSeason('easter')">Easter</div>
-        <div class="season" onclick="toggleSeason('summer')">Summer</div>
-        <div class="season" onclick="toggleSeason('current')">Current Seasonal Offering</div>
-    </div>
-    <div id="seasonal-content"></div>
-</section>
+            <section id="welcome">
+                <h2>Welcome to my flower site.</h2>
+                <p>Click on one of the seasons below to get a taste of what I do, or choose one of the pages above for their content.</p>
+                <hr class="thick-line">
+                <div class="season-boxes">
+                    <div class="season" onclick="toggleSeason('xmas')">X-MAS and New Years</div>
+                    <div class="season" onclick="toggleSeason('graduation')">Graduations</div>
+                    <div class="season" onclick="toggleSeason('birthday')">Birthdays</div>
+                    <div class="season" onclick="toggleSeason('halloween')">Halloween</div>
+                    <div class="season" onclick="toggleSeason('easter')">Easter</div>
+                    <div class="season" onclick="toggleSeason('summer')">Summer</div>
+                    <div class="season" onclick="toggleSeason('current')">Current Seasonal Offering</div>
+                </div>
+                <div id="seasonal-content"></div>
+            </section>
         </main>
     </div>
 
@@ -60,3 +67,4 @@
 
     <script src="script.js"></script>
 </body>
+</html>
