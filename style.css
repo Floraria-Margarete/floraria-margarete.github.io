@@ -5,15 +5,21 @@ body {
 
 .banner {
     display: flex;
-    justify-content: space-between; /* Distributes space between elements */
-    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Vertically center items */
     background-color: #4CAF50; /* Banner color */
     color: white;
     padding: 15px;
 }
- 
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Stack logo and title vertically */
+    align-items: flex-start; /* Align to the left */
+}
+
 .logo {
-    margin-left: auto; /* Push the logo to the right */
+    flex-shrink: 0; /* Prevent the logo from shrinking */
 }
 
 .logo img {
@@ -21,9 +27,15 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
+.banner nav {
+    flex-grow: 1; /* Allow nav to grow and take up space */
+    text-align: center; /* Center the nav items */
+}
+
 .banner nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .banner nav ul li {
