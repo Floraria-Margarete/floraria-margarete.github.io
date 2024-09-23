@@ -49,21 +49,36 @@ body {
 
 
 .banner nav {
-    flex-grow: 1; /* Allow nav to grow and take up space */
-    text-align: center; /* Center the nav items */
+    flex-grow: 1; /* Allow the nav to grow and take up space */
+    text-align: center; /* Center text inside the nav */
 }
 
 .banner nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Ensure no margin */
-    display: inline-block; /* Center the ul itself */
+    display: inline-flex; /* Use inline-flex to keep items in a row */
 }
 
 .banner nav ul li {
-    display: inline; /* Keep items inline */
-    margin: 0 15px; /* Spacing between items */
+    margin: 0 10px; /* Space between buttons */
 }
+
+.banner nav ul li a {
+    display: inline-block; /* Make the link behave like a block for padding */
+    background-color: #fff; /* Background color for the button */
+    color: #4CAF50; /* Text color */
+    padding: 10px 20px; /* Space inside the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    transition: background-color 0.3s, color 0.3s; /* Transition effects */
+}
+
+.banner nav ul li a:hover {
+    background-color: #4CAF50; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
 
 .season-boxes {
     display: flex;
