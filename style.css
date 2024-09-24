@@ -2,9 +2,6 @@ html, body {
     height: 100%; /* Ensure full height for flexbox layout */
     margin: 0; /* Remove default margin */
     overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-body {
     display: flex; /* Use flexbox for the body */
     flex-direction: column; /* Stack children vertically */
     background-color: #EAAC3B;
@@ -13,34 +10,105 @@ body {
 /* Banner and Navigation Styles */
 .banner {
     display: flex;
-    background-image: url('https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/banner/daisy.jpg'); /* Background image for the border */
-    background-size: cover; /* Stretch the image to cover the entire area */
-    background-repeat: no-repeat; /* Do not repeat the image */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    background-color: #4B5529;
+    background-color: #000000;
     color: #ffffff;
     padding: 20px;
-    height: auto; /* Allow height to adjust */
+    position: relative;
+    overflow: hidden;
 }
 
-    .banner h1 {
-        background-color: #ffffff; /* Green background */
-        color: black; /* Black text */
-        padding: 20px; /* Space around the text */
-        border-radius: 10px; /* Optional: rounded corners */
-        display: inline-block; /* Make the h1 size fit content */
-        margin: 0; /* Remove default margins */
-    }
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/banner/daisy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Fixed syntax for semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    opacity: 1; /* Complete the opacity rule */
+}
+
+.banner h1 {
+    color: #000000; /* Fixed to black text */
+    padding: 20px; /* Space around the text */
+    border-radius: 10px; /* Optional: rounded corners */
+    display: inline-block; /* Make the h1 size fit content */
+    margin: 0; /* Remove default margins */
+    font-size: 40px;
+    font-style: italic;
+}
 
 .logo {
-    max-width: 200px; /* Adjust size as needed */
+    max-width: 300px; /* Adjust size as needed */
     height: auto;
 }
 
+.language-flags {
+    position: absolute; /* Make the flags float */
+    right: 20px; /* Align the flags to the right */
+    top: 20px; /* Adjust the vertical position */
+    display: flex;
+    gap: 10px; /* Space between flag buttons */
+    z-index: 1000; /* Ensure the flags stay above other elements */
+    width: fit-content; /* Allow the container to fit its content */
+}
+
+.flag-icon {
+    width: 50px; /* Set smaller width for the flag icons */
+    height: 35px; /* Set smaller height for the flag icons */
+    object-fit: cover; /* Ensure the flags fit nicely in the button */
+}
+
+.flag-button:hover .flag-icon {
+    opacity: 0.8; /* Dim flag on hover */
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position relative to .language-dropdown */
+    background-color: #f9f9f9; /* Background color */
+    min-width: 120px; /* Minimum width of dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1; /* Ensure it sits above other elements */
+}
+
+    .language-button:hover + .dropdown-content,
+    .dropdown-content:hover {
+        display: block; /* Show dropdown on hover */
+    }
+
+.lang-option {
+    background-color: #ffffff; /* Option background color */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    text-align: left; /* Left-align text */
+    cursor: pointer; /* Change cursor */
+    width: 100%; /* Full width */
+}
+
+    .lang-option:hover {
+        background-color: #ddd; /* Background color on hover */
+    }
+
 .desktop-nav {
     text-align: center; /* Center nav items */
-    margin-top: 10px; /* Space between banner and nav */
+    margin-top: 30px; /* Space between banner and nav */
 }
 
     .desktop-nav ul {
@@ -50,7 +118,7 @@ body {
     }
 
         .desktop-nav ul li {
-            margin: 0 15px; /* Increased spacing */
+            margin: 0 20px; /* Increased spacing */
         }
 
             .desktop-nav ul li a {
@@ -90,15 +158,16 @@ body {
 
 #welcome {
     text-align: center; /* Center text in the welcome section */
-    font-size: 28px; /* Increased font size for welcome text */
+    font-size: 38px; /* Increased font size for welcome text */
+    text-sty
 }
 
 .thick-line {
     border: none; /* Remove default border */
-    height: 4px; /* Set thickness */
+    height: 15px; /* Set thickness */
     background-color: #4B5529; /* Set line color */
     margin: 20px auto; /* Space around the line */
-    width: 50%; /* Set line width */
+    width: 100%; /* Set line width */
 }
 
 /* Seasonal Boxes Styles */
@@ -110,9 +179,8 @@ body {
     max-width: 100%; /* Ensure content does not exceed viewport */
 }
 
-/* Image Box Styles */
 .image-box {
-    border-radius: 241px; /* Rounded corners */
+    border-radius: 24px; /* Rounded corners */
     padding: 10px; /* Space inside the box */
     margin: 10px; /* Space outside the box */
     display: flex; /* Use flexbox to arrange images */
@@ -139,12 +207,12 @@ body {
     border: 3px solid #000;
     padding: 12px; /* Increased padding for larger boxes */
     width: 150px; /* Increased width for each box */
+    height: 100px;
     text-align: center;
     cursor: pointer;
-    margin: 20px; /* Increased space between boxes */
-    font-size: 24px; /* Increased font size */
+    margin: 25px; /* Increased space between boxes */
+    font-size: 33px; /* Increased font size */
     background-color: white; /* Set background to white */
-
     transition: background-color 0.3s; /* Smooth transition */
 }
 
@@ -164,18 +232,10 @@ body {
     flex-wrap: wrap; /* Allow wrapping of footer items */
 }
 
-
-    .footer .contact {
+    .footer .contact,
+    .footer .follow-us,
+    .footer .location {
         font-size: 18px; /* Font size for contact */
-        white-space: normal; /* Allow wrapping of text */
-        overflow-wrap: break-word; /* Ensure long words break to the next line */
-        flex: 1; /* Allow this item to grow and shrink */
-        text-align: center; /* Center-align */
-        margin: 5px; /* Margin for spacing */
-    }
-
-    .footer .follow-us, .footer .location {
-        font-size: 18px; /* Font size for follow and location */
         white-space: normal; /* Allow wrapping of text */
         overflow-wrap: break-word; /* Ensure long words break to the next line */
         flex: 1; /* Allow these items to grow and shrink */
@@ -187,38 +247,83 @@ body {
         margin-right: 20px; /* Add space after the location text */
     }
 
+h2, h3 {
+    font-size: 50px; /* Set to the desired font size */
+    margin: 1px /* Adjust the top and bottom margins */
+}
 /* Media Queries for responsive design */
 @media (max-width: 800px) {
     .banner {
-        flex-direction: column; /* Stack items vertically */
-        height: auto; /* Allow height to adjust */
         padding: 20px; /* Increased padding */
     }
 
     .logo {
-        max-width: 80px; /* Smaller size for mobile */
+        max-width: 300px; /* Smaller size for mobile */
         margin: 10px 0; /* Add some margin */
+        height: auto;
     }
 
     .banner h1 {
         font-size: 30px; /* Smaller font size for mobile */
+        color: #4B5529;
+        opacity: 0; /* Set to 0 to hide */
     }
+
+    .banner-content {
+        background-color: rgba(234, 172, 59, 0); /* Slightly transparent background */
+    }
+
+    /* Dropdown Styles */
+    .dropdown {
+        display: block; /* Ensure dropdown is visible on mobile */
+    }
+
+    .dropbtn {
+        font-size: 30px;
+        background: rgba(255, 255, 255, 90%); /* Slightly transparent background */
+        border: none;
+        color: black;
+        cursor: pointer;
+        position: fixed; /* Fix to top-left */
+        top: 10px;
+        left: 10px;
+        z-index: 1000; /* Ensure it's on top */
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: fixed;
+        top: 50px;
+        left: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        border-radius: 5px;
+    }
+
+        .dropdown-menu nav ul {
+            padding: 10px;
+            margin: 0;
+            list-style-type: none;
+        }
+
+            .dropdown-menu nav ul li a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: black;
+            }
+
+                .dropdown-menu nav ul li a:hover {
+                    background-color: #4CAF50;
+                    color: white;
+                }
 
     .desktop-nav {
         display: none; /* Hide standard nav on mobile */
     }
-
-    .dropbtn {
-        font-size: 30px; /* Increase size of dropdown button */
-        background: transparent; /* Make background transparent */
-        border: none; /* Remove border */
-        color: white; /* Set button text color */
-        cursor: pointer; /* Change cursor to pointer */
-    }
-
-        .dropbtn:hover {
-            color: #4CAF50; /* Change color on hover */
-        }
 }
 
 /* Image Resizing for Different Screen Sizes */
@@ -229,23 +334,63 @@ body {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
     #seasonal-content img {
         width: calc(33.33% - 10px); /* Three images per row */
-        max-width: calc(33.33% - 10px); /* Ensure three images per row */
+        max-width: calc(33.33% - 10px);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #seasonal-content img {
         width: calc(50% - 10px); /* Two images per row */
-        max-width: calc(50% - 10px); /* Ensure two images per row */
+        max-width: calc(50% - 10px);
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 576px) {
     #seasonal-content img {
-        width: 100%; /* One image per row */
-        max-width: 100%; /* Full width */
+        width: calc(100% - 10px); /* One image per row */
+        max-width: calc(100% - 10px);
     }
+}
+
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center align the overall container */
+    padding: 20px; /* Add padding around the container */
+}
+
+.about-section {
+    display: flex; /* Align the text box and image horizontally */
+    align-items: center; /* Center vertically */
+    margin: 20px 0; /* Space between sections */
+}
+
+.about-box {
+    text-align: left; /* Align text to the left */
+    font-weight: bold; /* Make all text bold */
+    max-width: 600px; /* Set a maximum width for the box */
+    padding: 20px; /* Padding inside the box */
+    border: 2px solid #ccc; /* Optional: border for the box */
+    border-radius: 10px; /* Optional: rounded corners */
+    background-color: #f9f9f9; /* Background color */
+}
+
+.about-image {
+    width: 200px; /* Set a specific width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners for images */
+    margin-left: 20px; /* Space between the text and the image */
+}
+
+
+.separator {
+    border: none; /* Remove default border */
+    height: 15px; /* Set thickness */
+    background-color: #4B5529; /* Set line color */
+    margin: 20px auto; /* Space around the line */
+    width: 100%; /* Set line width */
 }
