@@ -10,8 +10,22 @@
     <!-- Banner -->
     <header>
         <div class="banner">
-            <h1>Floraria Margarete</h1>
-            <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.jpg" alt="Floraria Margarete Logo" class="logo" />
+            <div class="banner-image"></div>
+            <div class="banner-content">
+
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.jpg" alt="Floraria Margarete Logo" class="logo" />
+            </div>
+        </div>
+        <div class="language-flags">
+            <button class="flag-button" onclick="window.location.href='index.html'">
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/UK.png" alt="English Flag" class="flag-icon">
+            </button>
+            <button class="flag-button" onclick="window.location.href='index-ro.html'">
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.png" alt="Romanian Flag" class="flag-icon">
+            </button>
+            <button class="flag-button" onclick="window.location.href='index-hu.html'">
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.jpg" alt="Hungarian Flag" class="flag-icon">
+            </button>
         </div>
         <nav class="desktop-nav">
             <ul>
@@ -21,6 +35,7 @@
                 <li><a href="#seasonal-offering">Seasonal Offering</a></li>
             </ul>
         </nav>
+
         <div class="dropdown">
             <button class="dropbtn">☰</button>
             <div class="dropdown-menu">
@@ -30,7 +45,6 @@
                         <li><a href="#location">Location</a></li>
                         <li><a href="#pictures">Pictures</a></li>
                         <li><a href="#seasonal-offering">Seasonal Offering</a></li>
-                        <li class="stay-here">Stay Here</li>
                     </ul>
                 </nav>
             </div>
@@ -43,7 +57,7 @@
             <hr class="thick-line">
             <section id="welcome">
                 <h2>Welcome to my flower site.</h2>
-                <p>Click on one of the seasons below to get a taste of what I do, or choose one of the pages above for their content.</p>
+                <h3>Click on one of the seasons below to get a taste of what I do, or choose one of the pages above for their content.</h3>
 
                 <div class="season-boxes">
                     <div class="season" onclick="toggleSeason('xmas')">X-MAS and New Years</div>
@@ -63,7 +77,7 @@
     <div class="footer">
         <div class="contact">Contact: +40 755 676 073</div>
         <div class="follow-us">Follow us on <a href="https://www.facebook.com/Margareta.margarete.5/">Facebook</a></div>
-        <div class="location">Strada Margaretelor 5, Sâncraiu de Mureș</div>
+        <div class="location">Str. Margaretelor nr.5 Sâncraiu de Mureș</div>
     </div>
 
     <script src="script.js"></script>
