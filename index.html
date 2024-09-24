@@ -15,23 +15,23 @@
 
                 <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.jpg" alt="Floraria Margarete Logo" class="logo" />
             </div>
+            <div class="language-flags">
+                <button class="flag-button" onclick="window.location.href='index.html'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/UK.png" alt="English Flag" class="flag-icon">
+                </button>
+                <button class="flag-button" onclick="window.location.href='index-ro.html'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.png" alt="Romanian Flag" class="flag-icon">
+                </button>
+                <button class="flag-button" onclick="window.location.href='index-hu.html'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.jpg" alt="Hungarian Flag" class="flag-icon">
+                </button>
+            </div>
         </div>
-        <div class="language-flags">
-            <button class="flag-button" onclick="window.location.href='index.html'">
-                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/UK.png" alt="English Flag" class="flag-icon">
-            </button>
-            <button class="flag-button" onclick="window.location.href='index-ro.html'">
-                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.png" alt="Romanian Flag" class="flag-icon">
-            </button>
-            <button class="flag-button" onclick="window.location.href='index-hu.html'">
-                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.jpg" alt="Hungarian Flag" class="flag-icon">
-            </button>
-        </div>
+
         <nav class="desktop-nav">
             <ul>
-                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="AboutMe.html">About The Store</a></li>
                 <li><a href="#location">Location</a></li>
-                <li><a href="#pictures">Pictures</a></li>
                 <li><a href="#seasonal-offering">Seasonal Offering</a></li>
             </ul>
         </nav>
@@ -41,9 +41,8 @@
             <div class="dropdown-menu">
                 <nav>
                     <ul>
-                        <li><a href="#about">About Me</a></li>
+                        <li><a href="AboutMe.html">About Me</a></li>
                         <li><a href="#location">Location</a></li>
-                        <li><a href="#pictures">Pictures</a></li>
                         <li><a href="#seasonal-offering">Seasonal Offering</a></li>
                     </ul>
                 </nav>
@@ -58,18 +57,18 @@
             <section id="welcome">
                 <h2>Welcome to my flower site.</h2>
                 <h3>Click on one of the seasons below to get a taste of what I do, or choose one of the pages above for their content.</h3>
-
-                <div class="season-boxes">
-                    <div class="season" onclick="toggleSeason('xmas')">X-MAS and New Years</div>
-                    <div class="season" onclick="toggleSeason('graduation')">Graduations</div>
-                    <div class="season" onclick="toggleSeason('birthday')">Birthdays</div>
-                    <div class="season" onclick="toggleSeason('halloween')">Halloween</div>
-                    <div class="season" onclick="toggleSeason('easter')">Easter</div>
-                    <div class="season" onclick="toggleSeason('summer')">Summer</div>
-                    <div class="season" onclick="toggleSeason('current')">Current Seasonal Offering</div>
-                </div>
-                <div id="seasonal-content"></div>
             </section>
+
+            <div class="season-boxes">
+                <div class="season" onclick="toggleSeason('xmas')">X-MAS and New Years</div>
+                <div class="season" onclick="toggleSeason('graduation')">Graduations</div>
+                <div class="season" onclick="toggleSeason('birthday')">Birthdays</div>
+                <div class="season" onclick="toggleSeason('halloween')">Halloween</div>
+                <div class="season" onclick="toggleSeason('wedding')">Weddings</div>
+                <div class="season" onclick="toggleSeason('easter')">Easter</div>
+                <div class="season" onclick="toggleSeason('current')">Current Seasonal Offering</div>
+            </div>
+            <div id="seasonal-content"></div>
         </main>
     </div>
 
