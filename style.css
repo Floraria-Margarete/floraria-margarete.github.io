@@ -60,14 +60,17 @@ html, body {
 }
 
 .language-flags {
-    position: absolute; /* Make the flags float */
-    right: 20px; /* Align the flags to the right */
-    top: 20px; /* Adjust the vertical position */
+    position: absolute;
+    right: 20px;
+    top: 20px;
     display: flex;
-    gap: 10px; /* Space between flag buttons */
-    z-index: 1000; /* Ensure the flags stay above other elements */
-    width: fit-content; /* Allow the container to fit its content */
+    gap: 10px;
+    z-index: 1000;
+    width: fit-content;
+    margin-top: 10px; /* Add some margin to separate from logo */
+    margin-right: 30px; /* Increase margin from the right edge */
 }
+
 
 .flag-icon {
     width: 50px; /* Set smaller width for the flag icons */
@@ -158,8 +161,7 @@ html, body {
 
 #welcome {
     text-align: center; /* Center text in the welcome section */
-    font-size: 38px; /* Increased font size for welcome text */
-    text-sty
+    font-size: 15px; /* Increased font size for welcome text */
 }
 
 .thick-line {
@@ -248,7 +250,7 @@ html, body {
     }
 
 h2, h3 {
-    font-size: 50px; /* Set to the desired font size */
+    font-size: 40px; /* Set to the desired font size */
     margin: 1px /* Adjust the top and bottom margins */
 }
 /* Media Queries for responsive design */
@@ -259,7 +261,7 @@ h2, h3 {
 
     .logo {
         max-width: 300px; /* Smaller size for mobile */
-        margin: 10px 0; /* Add some margin */
+        margin: 50px 0; /* Add some margin */
         height: auto;
     }
 
@@ -341,7 +343,7 @@ h2, h3 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #seasonal-content img {
         width: calc(50% - 10px); /* Two images per row */
         max-width: calc(50% - 10px);
@@ -365,32 +367,88 @@ h2, h3 {
 
 .about-section {
     display: flex; /* Align the text box and image horizontally */
+    flex-direction: row; /* Default to row layout for desktop */
     align-items: center; /* Center vertically */
     margin: 20px 0; /* Space between sections */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Mobile styles */
+@media (max-width: 800px) {
+    .about-section {
+        flex-direction: column; /* Stack text box and image vertically */
+        align-items: center; /* Center align items */
+        width: 100%; /* Ensure the section takes full width */
+        padding: 0 10px; /* Add some horizontal padding */
+    }
+
+    .about-box {
+        text-align: left; /* Align text to the left */
+        font-weight: bold; /* Make all text bold */
+        max-width: 90%; /* Set max width for mobile */
+        font-size: 18px; /* Slightly smaller font size for mobile */
+        padding: 20px; /* Reduce padding for mobile */
+        border: 3px solid #4B5529; /* Optional: border for the box */
+        border-radius: 30px; /* Optional: rounded corners */
+        background-color: #f9f9f9; /* Background color */
+        margin: 0 auto; /* Center the box */
+    }
+
+    .about-image {
+        width: 90%; /* Set width to 90% to match the box */
+        max-width: 500px; /* Set max width to reduce size */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Optional: rounded corners for images */
+        margin: 10px auto; /* Center the image */
+        display: block; /* Ensure the image is displayed as a block element */
+    }
 }
 
 .about-box {
     text-align: left; /* Align text to the left */
     font-weight: bold; /* Make all text bold */
-    max-width: 600px; /* Set a maximum width for the box */
-    padding: 20px; /* Padding inside the box */
-    border: 2px solid #ccc; /* Optional: border for the box */
-    border-radius: 10px; /* Optional: rounded corners */
+    max-width: 500px; /* Set a maximum width for the box */
+    font-size: 20px;
+    padding: 30px; /* Padding inside the box */
+    border: 4px solid #4B5529; /* Optional: border for the box */
+    border-radius: 60px; /* Optional: rounded corners */
     background-color: #f9f9f9; /* Background color */
 }
 
 .about-image {
-    width: 200px; /* Set a specific width for the images */
-    height: auto; /* Maintain aspect ratio */
+    width: 600px; /* Set a specific width for the images */
+    height: 465px; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: rounded corners for images */
-    margin-left: 20px; /* Space between the text and the image */
-}
+    margin: 10px 0 auto; /* Center the image by setting margin to auto */
+    padding: 20px; /* Reduce padding for mobile */
 
+    display: block; /* Ensure the image is displayed as a block element */
+}
 
 .separator {
     border: none; /* Remove default border */
     height: 15px; /* Set thickness */
     background-color: #4B5529; /* Set line color */
-    margin: 20px auto; /* Space around the line */
     width: 100%; /* Set line width */
+}
+
+/* Mobile Styles */
+@media (max-width: 800px) {
+    #welcome {
+        background-color: white; /* White background for the box */
+        padding: 15px; /* Padding inside the box */
+        border-radius: 8px; /* Rounded corners */
+        font-size: 14px; /* Smaller font size */
+        line-height: 1.5; /* Improved line height for readability */
+        max-width: 90%; /* Max width for the box */
+        margin: 0 auto; /* Center the box */
+        word-wrap: break-word; /* Ensure text wraps properly */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        text-align: center; /* Justify text alignment */
+    }
+}
+
+
+.hidden {
+    display: none; /* Use this class to hide elements */
 }
