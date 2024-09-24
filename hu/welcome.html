@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margarete Virágbolt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner -->
+    <header>
+        <div class="banner">
+            <div class="banner-image"></div>
+            <div class="banner-content">
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.jpg" alt="Margarete Virágbolt Logo" class="logo" />
+            </div>
+            <div class="language-flags">
+                <button class="flag-button" onclick="window.location.href='index.html'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/UK.png" alt="Anglia zászlója" class="flag-icon">
+                </button>
+                <button class="flag-button" onclick="window.location.href='index-ro.html'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.png" alt="Románia zászlója" class="flag-icon">
+                </button>
+                <button class="flag-button" onclick="window.location.href='index-hu.html'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.jpg" alt="Magyarország zászlója" class="flag-icon">
+                </button>
+            </div>
+        </div>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="AboutMe.html">Rólam</a></li>
+                <li><a href="#location">Helyszín</a></li>
+                <li><a href="#seasonal-offering">Szezonális ajánlatok</a></li>
+            </ul>
+        </nav>
+
+        <div class="dropdown">
+            <button class="dropbtn">☰</button>
+            <div class="dropdown-menu">
+                <nav>
+                    <ul>
+                        <li><a href="AboutMe.html">Rólam</a></li>
+                        <li><a href="#location">Helyszín</a></li>
+                        <li><a href="#seasonal-offering">Szezonális ajánlatok</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main">
+        <main>
+            <hr class="thick-line">
+            <section id="welcome">
+                <h2>Üdvözöljük! Az alábbiakban megtekintheti a kínált termékeinket.</h2>
+                <h3>Az üzletben vásárolhat, vagy megrendelheti a virágdíszeket a következő alkalmakra:</h3>
+            </section>
+
+            <div class="season-boxes">
+                <div class="season" onclick="toggleSeason('xmas')">Karácsony / Újév</div>
+                <div class="season" onclick="toggleSeason('graduation')">Ballagás</div>
+                <div class="season" onclick="toggleSeason('birthday')">Születésnap</div>
+                <div class="season" onclick="toggleSeason('halloween')">Halloween</div>
+                <div class="season" onclick="toggleSeason('wedding')">Esküvő</div>
+                <div class="season" onclick="toggleSeason('easter')">Húsvét</div>
+                <div class="season" onclick="toggleSeason('current')">Szezonális ajánlatok</div>
+            </div>
+            <div id="seasonal-content"></div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="contact">Kapcsolat: +40 755 676 073</div>
+        <div class="follow-us">Kövessen minket a <a href="https://www.facebook.com/Margareta.margarete.5/">Facebookon</a></div>
+        <div class="location">Margaretek utca 5, Sâncraiu de Mureș</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
