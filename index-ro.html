@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
@@ -15,23 +15,23 @@
 
                 <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.jpg" alt="Logo Florăria Margarete" class="logo" />
             </div>
+            <div class="language-flags">
+                <button class="flag-button" onclick="window.location.href='index.html'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/UK.png" alt="Steagul Angliei" class="flag-icon">
+                </button>
+                <button class="flag-button" onclick="window.location.href='index-ro.html'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.png" alt="Steagul României" class="flag-icon">
+                </button>
+                <button class="flag-button" onclick="window.location.href='index-hu.html'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.jpg" alt="Steagul Ungariei" class="flag-icon">
+                </button>
+            </div>
         </div>
-        <div class="language-flags">
-            <button class="flag-button" onclick="window.location.href='index.html'">
-                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/UK.png" alt="Steagul Angliei" class="flag-icon">
-            </button>
-            <button class="flag-button" onclick="window.location.href='index-ro.html'">
-                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.png" alt="Steagul României" class="flag-icon">
-            </button>
-            <button class="flag-button" onclick="window.location.href='index-hu.html'">
-                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.jpg" alt="Steagul Ungariei" class="flag-icon">
-            </button>
-        </div>
+
         <nav class="desktop-nav">
             <ul>
                 <li><a href="AboutMe.html">Despre mine</a></li>
                 <li><a href="#location">Locație</a></li>
-                <li><a href="#pictures">Poze</a></li>
                 <li><a href="#seasonal-offering">Oferte sezoniere</a></li>
             </ul>
         </nav>
@@ -41,9 +41,8 @@
             <div class="dropdown-menu">
                 <nav>
                     <ul>
-                        <li><a href="#about">Despre mine</a></li>
+                        <li><a href="AboutMe.html">Despre mine</a></li>
                         <li><a href="#location">Locație</a></li>
-                        <li><a href="#pictures">Recenzii</a></li>
                         <li><a href="#seasonal-offering">Oferte sezoniere</a></li>
                     </ul>
                 </nav>
@@ -58,18 +57,18 @@
             <section id="welcome">
                 <h2>Bine ați venit! Mai jos puteți vedea produsele pe care le ofer.</h2>
                 <h3>Puteți cumpăra din magazin sau comanda aranjamente florale pentru următoarele ocazii:</h3>
-
-                <div class="season-boxes">
-                    <div class="season" onclick="toggleSeason('xmas')">Crăciun / Anul Nou</div>
-                    <div class="season" onclick="toggleSeason('graduation')">Halloween</div>
-                    <div class="season" onclick="toggleSeason('birthday')">Paște</div>
-                    <div class="season" onclick="toggleSeason('halloween')">Prima zi de școală</div>
-                    <div class="season" onclick="toggleSeason('easter')">Aniversări</div>
-                    <div class="season" onclick="toggleSeason('summer')">Nuntă</div>
-                    <div class="season" onclick="toggleSeason('current')">Urmărește-mă pe</div>
-                </div>
-                <div id="seasonal-content"></div>
             </section>
+
+            <div class="season-boxes">
+                <div class="season" onclick="toggleSeason('xmas')">Crăciun / Anul Nou</div>
+                <div class="season" onclick="toggleSeason('graduation')">Absolvire</div>
+                <div class="season" onclick="toggleSeason('birthday')">Aniversări</div>
+                <div class="season" onclick="toggleSeason('halloween')">Halloween </div>
+                <div class="season" onclick="toggleSeason('wedding')">Nuntă </div>
+                <div class="season" onclick="toggleSeason('easter')">Paște</div>
+                <div class="season" onclick="toggleSeason('current')">Oferte sezoniere</div>
+            </div>
+            <div id="seasonal-content"></div>
         </main>
     </div>
 
