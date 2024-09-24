@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florăria Margarete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner -->
+    <header>
+        <div class="banner">
+            <div class="banner-image"></div>
+            <div class="banner-content">
+
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.jpg" alt="Logo Florăria Margarete" class="logo" />
+            </div>
+        </div>
+        <div class="language-flags">
+            <button class="flag-button" onclick="window.location.href='index.html'">
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/UK.png" alt="Steagul Angliei" class="flag-icon">
+            </button>
+            <button class="flag-button" onclick="window.location.href='index-ro.html'">
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.png" alt="Steagul României" class="flag-icon">
+            </button>
+            <button class="flag-button" onclick="window.location.href='index-hu.html'">
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.jpg" alt="Steagul Ungariei" class="flag-icon">
+            </button>
+        </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="AboutMe.html">Despre mine</a></li>
+                <li><a href="#location">Locație</a></li>
+                <li><a href="#pictures">Poze</a></li>
+                <li><a href="#seasonal-offering">Oferte sezoniere</a></li>
+            </ul>
+        </nav>
+
+        <div class="dropdown">
+            <button class="dropbtn">☰</button>
+            <div class="dropdown-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#about">Despre mine</a></li>
+                        <li><a href="#location">Locație</a></li>
+                        <li><a href="#pictures">Recenzii</a></li>
+                        <li><a href="#seasonal-offering">Oferte sezoniere</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main">
+        <main>
+            <hr class="thick-line">
+            <section id="welcome">
+                <h2>Bine ați venit! Mai jos puteți vedea produsele pe care le ofer.</h2>
+                <h3>Puteți cumpăra din magazin sau comanda aranjamente florale pentru următoarele ocazii:</h3>
+
+                <div class="season-boxes">
+                    <div class="season" onclick="toggleSeason('xmas')">Crăciun / Anul Nou</div>
+                    <div class="season" onclick="toggleSeason('graduation')">Halloween</div>
+                    <div class="season" onclick="toggleSeason('birthday')">Paște</div>
+                    <div class="season" onclick="toggleSeason('halloween')">Prima zi de școală</div>
+                    <div class="season" onclick="toggleSeason('easter')">Aniversări</div>
+                    <div class="season" onclick="toggleSeason('summer')">Nuntă</div>
+                    <div class="season" onclick="toggleSeason('current')">Urmărește-mă pe</div>
+                </div>
+                <div id="seasonal-content"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="contact">Contact: +40 755 676 073</div>
+        <div class="follow-us">Urmărește-ne pe <a href="https://www.facebook.com/Margareta.margarete.5/">Facebook</a></div>
+        <div class="location">Str. Margaretelor nr.5 Sâncraiu de Mureș</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
