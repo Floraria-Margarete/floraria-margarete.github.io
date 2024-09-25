@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despre mine - Florăria Margarete</title>
+    <title>Locație - Florăria Margarete</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <style>
+        body {
+            text-align: center; /* Center text for the entire body */
+        }
+    </style>
     <!-- Banner -->
     <header>
         <div class="banner">
@@ -15,13 +20,13 @@
                 <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.jpg" alt="Logo Florăria Margarete" class="logo" />
             </div>
             <div class="language-flags">
-                <button class="flag-button" onclick="window.location.href='/en/AboutMe.html'">
+                <button class="flag-button" onclick="window.location.href='/ro/location.html'">
                     <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/UK.png" alt="Steagul Angliei" class="flag-icon">
                 </button>
-                <button class="flag-button" onclick="window.location.href='/ro/AboutMe.html'">
+                <button class="flag-button" onclick="window.location.href='/ro/location.html'">
                     <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.png" alt="Steagul României" class="flag-icon">
                 </button>
-                <button class="flag-button" onclick="window.location.href='/hu/AboutMe.html'">
+                <button class="flag-button" onclick="window.location.href='/hu/location.html'">
                     <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.jpg" alt="Steagul Ungariei" class="flag-icon">
                 </button>
             </div>
@@ -30,7 +35,7 @@
         <nav class="desktop-nav">
             <ul>
                 <li><a href="welcome.html">Pagina de bun venit</a></li>
-                <li><a href="location.html">Locație</a></li>
+                <li><a href="AboutMe.html">Despre magazin</a></li>
                 <li><a href="#seasonal-offering">Oferte sezoniere</a></li>
             </ul>
         </nav>
@@ -41,7 +46,7 @@
                 <nav>
                     <ul>
                         <li><a href="welcome.html">Pagina de bun venit</a></li>
-                        <li><a href="location.html">Locație</a></li>
+                        <li><a href="AboutMe.html">Despre magazin</a></li>
                         <li><a href="#seasonal-offering">Oferte sezoniere</a></li>
                     </ul>
                 </nav>
@@ -53,32 +58,24 @@
     <div class="main">
         <main>
             <hr class="thick-line">
-            <section id="about">
-                <div class="about-container">
-                    <div class="about-section">
-                        <div class="about-box about-store">
-                            <h2>Despre magazin</h2>
-                            <p>Bine ați venit la Florăria Margarete! Sunt [Numele Tău], pasionat de aranjamente florale și de tot ce înseamnă frumusețe naturală. Cu o experiență de [număr de ani] în domeniu, îmi dedic timpul pentru a crea cele mai frumoase aranjamente pentru fiecare ocazie.</p>
-                            <p>Fie că este vorba de o nuntă, un eveniment corporate sau o simplă surpriză pentru cineva drag, sunt aici să transform visele în realitate cu ajutorul florilor.</p>
-                            <p>Vă invit să explorați galeria noastră pentru a descoperi lucrările mele și să nu ezitați să mă contactați pentru comenzi personalizate!</p>
+            <section id="location" class="location-section">
+                <div class="opening-times">
+                    <h3 class="program-heading">Program</h3>
+                    <div class="opening-hours-container">
+                        <div class="opening-hours">
+                            <span><strong>Luni:</strong> ÎNCHIS</span><br>
+                            <span><strong>Marți - Sâmbătă:</strong> 08:00 - 20:00</span><br>
+                            <span><strong>Duminică:</strong> 08:00 - 15:00</span>
                         </div>
-                        <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/about/shop.png" alt="Imagine a magazinului" class="about-image">
-                    </div>
-
-                    <hr class="separator"> <!-- Thick line separator -->
-
-                    <div class="about-section">
-                        <div class="about-box about-flowers">
-                            <h2>Despre flori</h2>
-                            <p>Florile sunt un simbol al frumuseții și al iubirii. Fiecare floare are o poveste de spus și un sentiment de exprimat.</p>
-                            <p>La Florăria Margarete, oferim o selecție largă de flori, de la cele mai populare până la cele mai rare, fiecare având caracteristicile și frumusețea sa unică.</p>
-                            <p>Descoperiți lumea fascinantă a florilor cu noi!</p>
-                        </div>
-                        <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/about/flower.jpg" alt="Imagine a florilor" class="about-image">
                     </div>
                 </div>
-            </section>
 
+
+                <!-- Address below the opening times -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17147.821262046316!2d24.527236!3d46.5545823!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474bc9b91867cae9%3A0xeed72dcfd110acbd!2sFlor%C4%83ria%20Margarete!5e1!3m2!1sen!2suk!4v1727270491510!5m2!1sen!2suk" width="1600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
         </main>
     </div>
     <div class="footer">

@@ -162,6 +162,17 @@ html, body {
 #welcome {
     text-align: center; /* Center text in the welcome section */
     font-size: 15px; /* Increased font size for welcome text */
+    background-color: #4B5529; /* White background for the box */
+    color: white;
+    padding: 15px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 14px; /* Smaller font size */
+    line-height: 1.5; /* Improved line height for readability */
+    max-width: 80.5%; /* Max width for the box */
+    margin: 0 auto; /* Center the box */
+    word-wrap: break-word; /* Ensure text wraps properly */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Justify text alignment */
 }
 
 .thick-line {
@@ -234,20 +245,16 @@ html, body {
     flex-wrap: wrap; /* Allow wrapping of footer items */
 }
 
-    .footer .contact,
-    .footer .follow-us,
-    .footer .location {
-        font-size: 18px; /* Font size for contact */
-        white-space: normal; /* Allow wrapping of text */
-        overflow-wrap: break-word; /* Ensure long words break to the next line */
-        flex: 1; /* Allow these items to grow and shrink */
-        text-align: center; /* Center-align */
-        margin: 5px; /* Margin for spacing */
-    }
+.footer-left, .footer-center, .footer-right {
+    flex: 1; /* Each section takes up equal space */
+    text-align: center; /* Center text in each section */
+}
 
-    .footer .location {
-        margin-right: 20px; /* Add space after the location text */
-    }
+.footer .location {
+    margin-right: 20px; /* Add space after the location text */
+}
+
+
 
 h2, h3 {
     font-size: 30px; /* Set to the desired font size */
@@ -471,7 +478,7 @@ h2, h3 {
     text-align: center; /* Center align text */
     margin-top: 20px; /* Space above */
     color: white; /* White text color */
-    max-width: 1000px; /* Set a maximum width */
+    max-width: 900px; /* Set a maximum width */
     margin-left: auto; /* Centering */
     margin-right: auto; /* Centering */
 }
@@ -486,10 +493,7 @@ h2, h3 {
 }
 
 .opening-hours {
-    display: flex; /* Use flexbox for a horizontal layout */
-    justify-content: center; /* Center items within row */
-    gap: 30px; /* Space between items; adjust as needed */
-    margin-bottom: 10px; /* Space between the two rows */
+    margin-bottom: 5px; /* Optional: Add some space between the lines */
 }
 
 .opening-times h3 {
@@ -510,6 +514,20 @@ h2, h3 {
 .location-section h2 {
     font-size: 35px;
     font-weight: bold;
+}
+
+.location-box {
+    background-color: #4B5529; /* White background for the box */
+    color: white;
+    padding: 15px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 14px; /* Smaller font size */
+    line-height: 1.5; /* Improved line height for readability */
+    max-width: 40%; /* Max width for the box */
+    margin: 0 auto; /* Center the box */
+    word-wrap: break-word; /* Ensure text wraps properly */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Justify text alignment */
 }
 
 /* Mobile Styles */
@@ -562,4 +580,13 @@ h2, h3 {
         align-items: center; /* Center items horizontally */
         height: auto; /* Adjust height based on content */
     }
+}
+
+.program-heading {
+    text-decoration: underline; /* Underline the heading */
+}
+
+.opening-hours-container {
+    line-height: 1.5; /* Adjust the line height for spacing between lines */
+    margin-bottom: 10px; /* Optional: Add space below the opening hours container */
 }
