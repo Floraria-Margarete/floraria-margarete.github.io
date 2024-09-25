@@ -50,7 +50,7 @@ html, body {
     border-radius: 10px; /* Optional: rounded corners */
     display: inline-block; /* Make the h1 size fit content */
     margin: 0; /* Remove default margins */
-    font-size: 40px;
+    font-size: 10px;
     font-style: italic;
 }
 
@@ -127,7 +127,7 @@ html, body {
             .desktop-nav ul li a {
                 display: inline-block;
                 font-size: 30px; /* Increased font size */
-                background-color: #fff;
+                background-color: #ebeced;
                 color: #000000;
                 padding: 10px 20px; /* Adjust padding for buttons */
                 border-radius: 5px;
@@ -162,6 +162,17 @@ html, body {
 #welcome {
     text-align: center; /* Center text in the welcome section */
     font-size: 15px; /* Increased font size for welcome text */
+    background-color: #4B5529; /* White background for the box */
+    color: white;
+    padding: 15px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 14px; /* Smaller font size */
+    line-height: 1.5; /* Improved line height for readability */
+    max-width: 80.5%; /* Max width for the box */
+    margin: 0 auto; /* Center the box */
+    word-wrap: break-word; /* Ensure text wraps properly */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Justify text alignment */
 }
 
 .thick-line {
@@ -203,9 +214,14 @@ html, body {
     flex-wrap: wrap; /* Allows wrapping to the next line */
     justify-content: center; /* Center the boxes */
     margin: 20px 0; /* Space around the boxes */
+    text-align: center
 }
 
 .season {
+    display: flex; /* Make each box a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+
     border: 3px solid #000;
     padding: 12px; /* Increased padding for larger boxes */
     width: 150px; /* Increased width for each box */
@@ -214,7 +230,7 @@ html, body {
     cursor: pointer;
     margin: 25px; /* Increased space between boxes */
     font-size: 33px; /* Increased font size */
-    background-color: white; /* Set background to white */
+    background-color: #ebeced; /* Set background to white */
     transition: background-color 0.3s; /* Smooth transition */
 }
 
@@ -234,23 +250,26 @@ html, body {
     flex-wrap: wrap; /* Allow wrapping of footer items */
 }
 
-    .footer .contact,
-    .footer .follow-us,
-    .footer .location {
-        font-size: 18px; /* Font size for contact */
-        white-space: normal; /* Allow wrapping of text */
-        overflow-wrap: break-word; /* Ensure long words break to the next line */
-        flex: 1; /* Allow these items to grow and shrink */
-        text-align: center; /* Center-align */
-        margin: 5px; /* Margin for spacing */
-    }
+.footer-left, .footer-center, .footer-right {
+    flex: auto; /* Each section takes up equal space */
+    text-align: center; /* Center text in each section */
+}
 
-    .footer .location {
-        margin-right: 20px; /* Add space after the location text */
-    }
+.footer-center, .footer-right {
+    flex: auto; /* Each section takes up equal space */
+    text-align: center; /* Center text in each section */
+    margin-top: 10px;
+}
+
+.footer .location {
+    margin-right: 20px; /* Add space after the location text */
+}
+
+
 
 h2, h3 {
-    font-size: 40px; /* Set to the desired font size */
+    font-size: 30px; /* Set to the desired font size */
+    font-weight: bold;
     margin: 1px /* Adjust the top and bottom margins */
 }
 /* Media Queries for responsive design */
@@ -410,9 +429,10 @@ h2, h3 {
     max-width: 500px; /* Set a maximum width for the box */
     font-size: 20px;
     padding: 30px; /* Padding inside the box */
-    border: 4px solid #4B5529; /* Optional: border for the box */
+    border: 4px solid #000000; /* Optional: border for the box */
     border-radius: 60px; /* Optional: rounded corners */
-    background-color: #f9f9f9; /* Background color */
+    background-color: #4B5529; /* Background color */
+    color: white;
 }
 
 .about-image {
@@ -435,7 +455,8 @@ h2, h3 {
 /* Mobile Styles */
 @media (max-width: 800px) {
     #welcome {
-        background-color: white; /* White background for the box */
+        background-color: #4B5529; /* White background for the box */
+        color: white;
         padding: 15px; /* Padding inside the box */
         border-radius: 8px; /* Rounded corners */
         font-size: 14px; /* Smaller font size */
@@ -451,4 +472,161 @@ h2, h3 {
 
 .hidden {
     display: none; /* Use this class to hide elements */
+}
+
+
+.location-section {
+    margin: 20px auto; /* Center the section with some margin */
+}
+
+.map-container {
+    margin: 20px auto; /* Center map container */
+}
+
+.opening-times {
+    background-color: #4B5529; /* Green background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Space above */
+    color: white; /* White text color */
+    max-width: 900px; /* Set a maximum width */
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
+}
+
+
+.opening-hours-container {
+    display: flex; /* Flex container for rows */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.opening-hours {
+    margin-bottom: 5px; /* Optional: Add some space between the lines */
+}
+
+.opening-times h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.opening-times p {
+    margin: 5px 0; /* Space between lines */
+}
+
+/* Adjust the title alignment */
+.location-section h1 {
+    margin-left: 20px; /* Align the title with the rest of the content */
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+/* Adjust the title alignment */
+.location-section h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.location-box {
+    background-color: #4B5529; /* White background for the box */
+    color: white;
+    padding: 15px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 14px; /* Smaller font size */
+    line-height: 1.5; /* Improved line height for readability */
+    max-width: 40%; /* Max width for the box */
+    margin: 0 auto; /* Center the box */
+    word-wrap: break-word; /* Ensure text wraps properly */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Justify text alignment */
+}
+
+/* Mobile Styles */
+@media (max-width: 800px) {
+    body, h1, h2, p {
+        margin: 0; /* Reset margins for mobile */
+        padding: 0; /* Reset padding for mobile */
+    }
+
+    .opening-times {
+        padding: 10px; /* Reduce padding */
+        max-width: 540px; /* Adjust the box to be about 40% smaller */
+    }
+
+    .opening-hours-container {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+
+    .opening-hours {
+        flex-direction: column; /* Stack opening hours vertically */
+        gap: 15px; /* Adjust space between items */
+    }
+
+    /* Adjust title size */
+    .location-section h1 {
+        font-size: 28px; /* Smaller title size for mobile */
+        color: white;
+    }
+
+    .location-section h2 {
+        font-size: 24px; /* Smaller subtitle size for mobile */
+        color: white;
+    }
+
+    /* Map Container */
+    .map-container iframe {
+        width: 100%; /* Make the map 25% smaller */
+        height: 350px; /* Adjust height for mobile */
+    }
+
+    .location-box {
+        background-color: #4B5529; /* White background for the box */
+        border-radius: 15px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        margin: 20px auto; /* Margin for centering the box */
+        max-width: 70%; /* Set a maximum width for the box */
+        display: flex; /* Use flexbox to center content */
+        flex-direction: column; /* Arrange items in a column */
+        justify-content: flex-start; /* Align items at the start to remove gap */
+        align-items: center; /* Center items horizontally */
+        height: auto; /* Adjust height based on content */
+    }
+}
+
+.program-heading {
+    text-decoration: underline; /* Underline the heading */
+}
+
+.opening-hours-container {
+    line-height: 1.5; /* Adjust the line height for spacing between lines */
+    margin-bottom: 10px; /* Optional: Add space below the opening hours container */
+}
+
+.message-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 15vh; /* Occupy 50% of the viewport height */
+    margin: 0 auto; /* Center horizontally in the page */
+    width: 80%; /* Occupy 80% of the page width */
+    text-align: center; /* Center the text */
+    color: white; /* Text color */
+    border-radius: 15px; /* Rounded corners */
+    font-weight: bold; /* Make all text bold */
+    max-width: 500px; /* Set a maximum width for the box */
+    font-size: 20px;
+    border: 4px solid #000000; /* Optional: border for the box */
+    border-radius: 60px; /* Optional: rounded corners */
+    background-color: #4B5529; /* Background color */
+    color: white;
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+    .message-container {
+        font-size: 1.2em; /* Scale down the font size for smaller screens */
+        width: 90%; /* Make the container a bit wider on mobile */
+        padding: 15px; /* Adjust padding for smaller screen */
+    }
 }
