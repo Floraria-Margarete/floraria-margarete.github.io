@@ -265,7 +265,14 @@ html, body {
     margin-right: 20px; /* Add space after the location text */
 }
 
+.footer a {
+    color: white; /* Change the link color to white */
+    text-decoration: none; /* Optional: Remove the underline */
+}
 
+.footer a:hover {
+    color: #cccccc; /* Optional: Add a hover effect, light gray */
+}
 
 h2, h3 {
     font-size: 30px; /* Set to the desired font size */
