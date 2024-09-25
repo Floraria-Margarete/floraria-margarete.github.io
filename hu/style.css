@@ -602,3 +602,30 @@ h2, h3 {
     line-height: 1.5; /* Adjust the line height for spacing between lines */
     margin-bottom: 10px; /* Optional: Add space below the opening hours container */
 }
+.message-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 15vh; /* Occupy 50% of the viewport height */
+    margin: 0 auto; /* Center horizontally in the page */
+    width: 80%; /* Occupy 80% of the page width */
+    text-align: center; /* Center the text */
+    color: white; /* Text color */
+    border-radius: 15px; /* Rounded corners */
+    font-weight: bold; /* Make all text bold */
+    max-width: 500px; /* Set a maximum width for the box */
+    font-size: 20px;
+    border: 4px solid #000000; /* Optional: border for the box */
+    border-radius: 60px; /* Optional: rounded corners */
+    background-color: #4B5529; /* Background color */
+    color: white;
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+    .message-container {
+        font-size: 1.2em; /* Scale down the font size for smaller screens */
+        width: 90%; /* Make the container a bit wider on mobile */
+        padding: 15px; /* Adjust padding for smaller screen */
+    }
+}
