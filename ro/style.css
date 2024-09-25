@@ -230,7 +230,7 @@ html, body {
     cursor: pointer;
     margin: 25px; /* Increased space between boxes */
     font-size: 33px; /* Increased font size */
-    background-color: white; /* Set background to white */
+    background-color: #ebeced; /* Set background to white */
     transition: background-color 0.3s; /* Smooth transition */
 }
 
