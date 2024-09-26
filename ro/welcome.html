@@ -53,7 +53,22 @@
         ]
     }
     </script>
-    
+    <script>
+(function() {
+    const routes = {
+        "/ro/Welcome": "/ro/welcome.html",
+        "/ro/Location": "/ro/location.html",
+        "/ro/Store": "/ro/store.html",
+        "/ro/Seasonal": "/ro/seasonal.html"
+    };
+
+    const currentPath = window.location.pathname;
+
+    if (routes[currentPath]) {
+        window.location.replace(routes[currentPath]);
+    }
+})();
+</script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
