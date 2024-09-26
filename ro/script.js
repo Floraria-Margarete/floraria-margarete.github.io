@@ -188,6 +188,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Add back the .html extension if it's missing
+if (window.location.pathname.endsWith("/Welcome")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("/Welcome", "/welcome.html"));
+}
+if (window.location.pathname.endsWith("/Location")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("/Location", "/location.html"));
+}
+if (window.location.pathname.endsWith("/Store")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("/Store", "/store.html"));
+}
+if (window.location.pathname.endsWith("/Seasonal")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("/Seasonal", "/seasonal.html"));
+}
 
 if (window.location.pathname.endsWith("welcome.html")) {
     window.history.replaceState(null, "", window.location.pathname.replace("welcome.html", "Welcome"));
