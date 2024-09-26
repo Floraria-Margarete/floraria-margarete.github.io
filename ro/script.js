@@ -52,7 +52,7 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd9.webp",
         ],
         halloween: [
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal1.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal2.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal3.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal4.webp",
@@ -137,8 +137,6 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per12.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per13.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per14.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per15.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per16.webp",
     ]
     };
 
