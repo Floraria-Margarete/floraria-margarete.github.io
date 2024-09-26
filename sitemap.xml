@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap-image/1.1
+        http://www.sitemaps.org/schemas/sitemap-image/1.1/sitemap-image.xsd">
+  
+  <url>
+    <loc>https://floraria-margarete.github.io/ro/welcome/</loc>
+    <lastmod>2024-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://floraria-margarete.github.io/ro/location/</loc>
+    <lastmod>2024-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://floraria-margarete.github.io/ro/seasonal/</loc>
+    <lastmod>2024-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://floraria-margarete.github.io/ro/store/</loc>
+    <lastmod>2024-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://floraria-margarete.github.io/hu/welcome/</loc>
+    <lastmod>2024-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://floraria-margarete.github.io/hu/location/</loc>
+    <lastmod>2024-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://floraria-margarete.github.io/hu/seasonal/</loc>
+    <lastmod>2024-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://floraria-margarete.github.io/hu/store/</loc>
+    <lastmod>2024-09-26</lastmod>
+  </url>
+</urlset>
