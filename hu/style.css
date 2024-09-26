@@ -267,7 +267,6 @@ html, body {
 
 .footer a {
     color: white; /* Change the link color to white */
-    text-decoration: none; /* Optional: Remove the underline */
 }
 
 .footer a:hover {
