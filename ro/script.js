@@ -187,3 +187,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+if (window.location.pathname.endsWith("welcome.html")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("welcome.html", "welcome"));
+}
+if (window.location.pathname.endsWith("location.html")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("location.html", "location"));
+}
+if (window.location.pathname.endsWith("store.html")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("store.html", "store"));
+}
+if (window.location.pathname.endsWith("seasonal.html")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("seasonal.html", "seasonal"));
+}
+
