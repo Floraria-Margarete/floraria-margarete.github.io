@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://floraria-margarete.github.io/sitemap.xml
