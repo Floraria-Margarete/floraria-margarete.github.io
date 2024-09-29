@@ -201,16 +201,42 @@
             margin: 1px;
         }
         @media (max-width: 800px) {
-            .banner {
-                flex-direction: column;
-                align-items: center;
-                background-color: #000000;
-                color: #ffffff;
-                padding: 20px;
-            }
-            .banner-image {
-                height: 100%;
-            }
+  .banner {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/banner/daisy.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;  /* Ensure the content doesn't overflow */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Fixed syntax for semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    opacity: 1; /* Complete the opacity rule */
+}
             .logo {
                 max-width: 300px;
                 margin: 50px 0;
