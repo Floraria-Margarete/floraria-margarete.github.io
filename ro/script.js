@@ -1,11 +1,3 @@
-app.use((req, res, next) => {
-    // Cache static assets for one year
-    if (req.url.endsWith('.webp') || req.url.endsWith('.css') || req.url.endsWith('.js')) {
-        res.setHeader('Cache-Control', 'public, max-age=31536000');
-    }
-    next();
-});
-
 function toggleSeason(season) {
     const seasonalContent = document.getElementById('seasonal-content');
     seasonalContent.innerHTML = ''; // Clear previous content
