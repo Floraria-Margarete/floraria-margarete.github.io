@@ -810,9 +810,9 @@ h2, h3 {
 
 #backToTop {
     position: fixed; /* Fixed position */
-    bottom: 20px; /* 20 pixels from the bottom */
-    right: 20px; /* 20 pixels from the right */
-    background-color: rgba(0, 255, 0, 0.5); /* Semi-transparent green */
+    bottom: 80px; /* 20 pixels from the bottom */
+    right: 40px; /* 20 pixels from the right */
+    background-color: rgba(75, 85, 41, 0.5); /* Semi-transparent greenish background */
     color: white; /* Text color */
     border: none; /* Remove border */
     border-radius: 50%; /* Make it circular */
@@ -824,5 +824,5 @@ h2, h3 {
 }
 
     #backToTop:hover {
-        background-color: rgba(0, 255, 0, 0.7); /* Darker on hover */
+        background-color: rgba(75, 85, 41, 1); /* Semi-transparent greenish background */
     }
