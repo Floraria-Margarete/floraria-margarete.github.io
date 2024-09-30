@@ -1,6 +1,7 @@
 function toggleSeason(season) {
     const seasonalContent = document.getElementById('seasonal-content');
     seasonalContent.innerHTML = ''; // Clear previous content
+    document.getElementById('backToTop').style.display = "block"; // Show button
 
     const images = {
         xmas: [
@@ -345,3 +346,14 @@ if (window.location.pathname.endsWith("seasonal.html")) {
     window.history.replaceState(null, "", window.location.pathname.replace("seasonal.html", "Seasonal"));
 }
 
+
+// Scroll to the top of the welcome section
+function scrollToTop() {
+    const welcomeSection = document.getElementById('welcome');
+    welcomeSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Optionally, hide the button when the seasonal content is clicked again
+function hideBackToTop() {
+    document.getElementById('backToTop').style.display = "none"; // Hide button
+}

@@ -1,6 +1,7 @@
 function toggleSeason(season) {
     const seasonalContent = document.getElementById('seasonal-content');
     seasonalContent.innerHTML = ''; // Clear previous content
+    document.getElementById('backToTop').style.display = "block"; // Show button
 
     const images = {
         xmas: [
@@ -213,7 +214,7 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Soap/img10.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Soap/img11.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Soap/img12.webp",
-         ],
+        ],
         silk: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Silk/img1.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Silk/img2.webp",
@@ -230,7 +231,7 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Silk/img13.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Silk/img14.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Silk/img15.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Silk/img16.webp",  
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Silk/img16.webp",
         ],
         succulent: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Succulent/img1.webp",
@@ -345,3 +346,14 @@ if (window.location.pathname.endsWith("seasonal.html")) {
     window.history.replaceState(null, "", window.location.pathname.replace("seasonal.html", "Seasonal"));
 }
 
+
+// Scroll to the top of the welcome section
+function scrollToTop() {
+    const welcomeSection = document.getElementById('welcome');
+    welcomeSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Optionally, hide the button when the seasonal content is clicked again
+function hideBackToTop() {
+    document.getElementById('backToTop').style.display = "none"; // Hide button
+}

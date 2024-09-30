@@ -807,3 +807,22 @@ h2, h3 {
         align-items: center; /* Center images */
     }
 }
+
+#backToTop {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20 pixels from the bottom */
+    right: 20px; /* 20 pixels from the right */
+    background-color: rgba(0, 255, 0, 0.5); /* Semi-transparent green */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Make it circular */
+    padding: 10px; /* Padding for size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Above other content */
+    font-size: 16px; /* Adjust font size */
+}
+
+    #backToTop:hover {
+        background-color: rgba(0, 255, 0, 0.7); /* Darker on hover */
+    }
