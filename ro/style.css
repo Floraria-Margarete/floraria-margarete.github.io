@@ -482,13 +482,26 @@ h2, h3 {
 .about-box {
     text-align: justify; /* Align text to the left */
     font-weight: bold; /* Make all text bold */
-    max-width: 500px; /* Set a maximum width for the box */
+    max-width: 50px; /* Set a maximum width for the box */
     font-size: 20px; /* Font size for desktop */
     padding: 30px; /* Padding inside the box */
     border: 4px solid #000000; /* Optional: border for the box */
     border-radius: 15px; /* Optional: rounded corners */
     background-color: #4B5529; /* Background color */
     color: white;
+}
+
+.opening-times {
+    background-color: #4B5529; /* Green background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Space above */
+    color: white; /* White text color */
+    max-width: 400px; /* Set a maximum width */
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
+    margin-bottom: 20px;
 }
 
 .about-image {
@@ -500,6 +513,25 @@ h2, h3 {
     margin: 25px;
 }
 
+.opening-hours-container {
+    display: flex; /* Flex container for rows */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.opening-hours {
+    margin-bottom: 5px; /* Optional: Add some space between the lines */
+}
+
+.opening-times h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.opening-times p {
+    margin: 5px 0; /* Space between lines */
+}
 /* Mobile styles */
 @media (max-width: 1000px) {
     .about-section {
@@ -560,7 +592,7 @@ h2, h3 {
             margin: 0 auto; /* Center the box */
             word-wrap: break-word; /* Ensure text wraps properly */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-            text-align: justify; /* Justify text alignment */
+            text-align: center; /* Justify text alignment */
         }
 
             #welcome h2, #welcome h3 {
@@ -574,6 +606,17 @@ h2, h3 {
             }
     }
 
+    .opening-times {
+        background-color: #4B5529; /* Green background */
+        border-radius: 15px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        text-align: center; /* Center align text */
+        margin-top: 20px; /* Space above */
+        color: white; /* White text color */
+        max-width: 900px; /* Set a maximum width */
+        margin-left: auto; /* Centering */
+        margin-right: auto; /* Centering */
+    }
 
     .hidden {
         display: none; /* Use this class to hide elements */
