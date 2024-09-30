@@ -600,7 +600,7 @@ h2, h3 {
 }
 
 .opening-times {
-    background-color: #4B5529; /* Green background */
+    background-color: #acd914; /* Green background */
     border-radius: 15px; /* Rounded corners */
     padding: 20px; /* Padding inside the box */
     text-align: center; /* Center align text */
@@ -821,3 +821,78 @@ h2, h3 {
     #backToTop:hover {
         background-color: rgba(75, 85, 41, 1); /* Semi-transparent greenish background */
     }
+
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-section, .opening-times {
+    background-color: #4B5529; /* Green background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Space above */
+    color: white; /* White text color */
+    max-width: 900px; /* Set a maximum width */
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
+}
+
+    .contact-section a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+.info-box {
+    background-color: #4B5529; /* Green background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    color: white; /* White text color */
+    max-width: 900px; /* Set a maximum width */
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
+    font-size: 25px;
+    line-height: 1.5; /* Adjust the line height for spacing between lines */
+}
+
+
+.info-row {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space sections evenly */
+    align-items: flex-start; /* Align sections at the top */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Space between sections */
+}
+
+/* Additional styles for individual sections can go here */
+.opening-times,
+.contact-section {
+    flex: 1; /* Allow sections to grow */
+}
+
+@media (max-width: 900px) {
+    .info-row {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        font-size: 18px;
+        gap: 5px; /* Reduced gap between items */
+    }
+
+    .opening-times,
+    .contact-section {
+        width: 90%; /* Set a narrower width for the boxes */
+        max-width: 500px; /* Optional: add a max-width to control size further */
+    }
+}
+
+.contact-heading {
+    text-decoration: underline; /* Underline the text */
+}

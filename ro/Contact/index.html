@@ -1,18 +1,14 @@
 ﻿<!DOCTYPE html>
-<html lang="hu">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helyszín - Margarete Virágbolt</title>
-
+    <title>Contact - Florăria Margarete</title>
 
     <link rel="preload" href="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/banner/daisy.webp" as="image">
 
     <link rel="stylesheet" href="../style.css">
 
-
-    <link rel="icon" href="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/favicon.ico" type="image/x-icon">
 
 </head>
 <body>
@@ -26,53 +22,72 @@
         <div class="banner">
             <div class="banner-image"></div>
             <div class="banner-content">
-                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.webp" alt="Margarete Virágbolt Logó" class="logo" />
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.webp" alt="Logo Florăria Margarete" class="logo" />
             </div>
             <div class="language-flags">
-                <button class="flag-button" onclick="window.location.href='/ro/Contact'">
-                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.webp" alt="Románia zászlaja" class="flag-icon">
+                <button class="flag-button" onclick="window.location.href='../Contact/'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.webp" alt="Steagul României" class="flag-icon">
                 </button>
-                <button class="flag-button" onclick="window.location.href='../Helyszín'">
-                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.webp" alt="Magyarország zászlaja" class="flag-icon">
+                <button class="flag-button" onclick="window.location.href='/hu/Helyszín/'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.webp" alt="Steagul Ungariei" class="flag-icon">
                 </button>
             </div>
         </div>
 
         <nav class="desktop-nav">
             <ul>
-                <li><a href="../Üdvözlő-oldal">Üdvözlő oldal</a></li>
-                <li><a href="../Boltunk">Boltunk</a></li>
-                <li><a href="../Hírek">Hírek</a></li>
+                <li><a href="../Bine-ati-venit/">Pagina de bun venit</a></li>
+                <li><a href="../Despre-magazin/">Despre magazin</a></li>
+                <li><a href="../Noutăți/">Noutăți</a></li>
             </ul>
         </nav>
+
         <div class="dropdown">
             <button class="dropbtn">☰</button>
             <div class="dropdown-menu">
                 <nav>
                     <ul>
-                        <li><a href="../Üdvözlő-oldal">Üdvözlő oldal</a></li>
-                        <li><a href="../Boltunk">Boltunk</a></li>
-                        <li><a href="../Hírek">Hírek</a></li>
+                        <li><a href="../Bine-ati-venit/">Pagina de bun venit</a></li>
+                        <li><a href="../Despre-magazin/">Despre magazin</a></li>
+                        <li><a href="../Noutăți/">Noutăți</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
     <!-- Main Content -->
     <div class="main">
         <main>
             <hr class="thick-line">
             <section id="location" class="location-section">
-                <div class="opening-times">
-                    <h3 class="program-heading">Nyitvatartás</h3>
-                    <div class="opening-hours-container">
-                        <div class="opening-hours">
-                            <span><strong>Hétfő:</strong> ZÁRVA</span><br>
-                            <span><strong>Kedd - Szombat:</strong> 08:00 - 20:00</span><br>
-                            <span><strong>Vasárnap:</strong> 08:00 - 15:00</span>
+                <div class="info-box">
+                    <!-- New container for both sections -->
+                    <div class="info-row">
+                        <!-- Program Section on the Left -->
+                        <div class="opening-times">
+                            <h3 class="program-heading">Program</h3>
+                            <div class="opening-hours-container">
+                                <div class="opening-hours">
+                                    <span><strong>Luni:</strong> ÎNCHIS</span><br>
+                                    <span><strong>Marți - Sâmbătă:</strong> 08:00 - 20:00</span><br>
+                                    <span><strong>Duminică:</strong> 08:00 - 15:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Section on the Right -->
+                        <div class="contact-section">
+                            <h3 class="contact-heading">Contact</h3>
+                            <div class="contact-details">
+                                <span><strong>Contact Number:</strong> 0748589812</span><br>
+                                <span><strong>Facebook:</strong> <a href="https://www.facebook.com/Margareta.margarete.5/" target="_blank">Click aici pentru a accesa</a></span><br>
+                                <span><strong>Instagram:</strong> <a href="https://www.instagram.com/tery.costea.7?igsh=MTh3bXVwYmowdm0xZQ==" target="_blank">Click aici pentru a accesa</a></span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- Address below the opening times -->
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17147.821262046316!2d24.527236!3d46.5545823!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474bc9b91867cae9%3A0xeed72dcfd110acbd!2sFlor%C4%83ria%20Margarete!5e1!3m2!1sen!2suk!4v1727270491510!5m2!1sen!2suk" width="1600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
