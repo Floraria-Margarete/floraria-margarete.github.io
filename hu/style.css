@@ -482,7 +482,7 @@ h2, h3 {
 .about-box {
     text-align: justify; /* Align text to the left */
     font-weight: bold; /* Make all text bold */
-    max-width: 50px; /* Set a maximum width for the box */
+    max-width: 500px; /* Set a maximum width for the box */
     font-size: 20px; /* Font size for desktop */
     padding: 30px; /* Padding inside the box */
     border: 4px solid #000000; /* Optional: border for the box */
