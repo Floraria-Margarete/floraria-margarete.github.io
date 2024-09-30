@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florăria Margarete</title>
+
+    <link rel="preload" href="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/banner/daisy.webp" as="image">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Florăria Margarete - Florărie locală oferind aranjamente florale în Sâncraiu de Mureș și Târgu Mureș. Cumpără flori pentru Crăciun, nunți, zile de naștere și alte ocazii speciale.">
+    <meta name="keywords" content="florarie Sâncraiu de Mureș, flori Târgu Mureș, aranjamente florale, flori nuntă, flori Crăciun, flori personalizate, florar Sâncraiu de Mureș, florar Târgu Mureș">
+    <meta name="author" content="Florăria Margarete">
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Florăria Margarete | Aranjamente florale în Sâncraiu de Mureș și Târgu Mureș">
+    <meta property="og:description" content="Oferim o varietate de aranjamente florale în Sâncraiu de Mureș și Târgu Mureș. Perfect pentru ocazii speciale cum ar fi nunți, aniversări și Crăciun.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.webp">
+    <meta property="og:url" content="https://www.florariamargarete.ro">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Florăria Margarete | Aranjamente florale în Sâncraiu de Mureș și Târgu Mureș">
+    <meta name="twitter:description" content="Aranjamente florale pentru orice ocazie - cumpără flori de la Florăria Margarete în Sâncraiu de Mureș și Târgu Mureș.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.webp">
+
+    <!-- Local Business Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Florist",
+            "name": "Florăria Margarete",
+            "image": "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.webp",
+            "@id": "https://www.florariamargarete.ro",
+            "url": "https://www.florariamargarete.ro",
+            "telephone": "+40-748-589-812",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Str. Margaretelor nr.5",
+                "addressLocality": "Sâncraiu de Mureș",
+                "postalCode": "540144",
+                "addressCountry": "RO"
+            },
+            "servesCuisine": "Florist",
+            "priceRange": "$$",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 46.530,
+                "longitude": 24.570
+            },
+            "sameAs": [
+                "https://www.facebook.com/Margareta.margarete.5/"
+            ]
+        }
+    </script>
+
+    
+
+    <!-- Load remaining CSS asynchronously -->
+    <link rel="preload" href="../style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../style.css"></noscript>
+
+    <link rel="icon" href="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Banner -->
+    <header>
+        <div class="banner">
+            <div class="banner-image"></div>
+            <div class="banner-content">
+
+                <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/welcome/Margarete.webp" alt="Logo Florăria Margarete" class="logo" width="300" height="300">
+            </div>
+            <div class="language-flags">
+                <button class="flag-button" onclick="window.location.href='../Bine-ati-venit/'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Romania.webp" alt="Steagul României" class="flag-icon">
+                </button>
+                <button class="flag-button" onclick="window.location.href='/hu/Üdvözlő-oldal/'">
+                    <img src="https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/flags/Hungary.webp" alt="Steagul Ungariei" class="flag-icon">
+                </button>
+            </div>
+        </div>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="../Despre-magazin/">Despre magazin</a></li>
+                <li><a href="../Locație/">Locație</a></li>
+                <li><a href="../Noutăți/">Noutăți</a></li>
+            </ul>
+        </nav>
+
+        <div class="dropdown">
+            <button class="dropbtn">☰</button>
+            <div class="dropdown-menu">
+                <nav>
+                    <ul>
+                        <li><a href="../Despre-magazin/">Despre magazin</a></li>
+                        <li><a href="../Locație/">Locație</a></li>
+                        <li><a href="../Noutăți/">Noutăți</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main">
+        <main>
+            <hr class="thick-line">
+            <section id="welcome">
+                <h2>Bine ați venit! Mai jos puteți vedea produsele pe care le ofer.</h2>
+                <h3>Puteți cumpăra din magazin sau comanda aranjamente florale pentru următoarele ocazii:</h3>
+            </section>
+
+            <div class="season-boxes">
+                <div class="season" onclick="toggleSeason('xmas')">Crăciun / Anul Nou</div>
+                <div class="season" onclick="toggleSeason('easter')">Paște</div>
+                <div class="season" onclick="toggleSeason('halloween')">Halloween </div>
+                <div class="season" onclick="toggleSeason('graduation')">Absolvire</div>
+                <div class="season" onclick="toggleSeason('birthday')">Zile de naștere</div>
+                <div class="season" onclick="toggleSeason('valentines')">Valentine's Day' </div>
+                <div class="season" onclick="toggleSeason('martie')">8 Martie' </div>
+                <div class="season" onclick="toggleSeason('wedding')">Nuntă </div>
+                <div class="season" onclick="toggleSeason('firstday')">Prima zi de școală</div>
+                <div class="season" onclick="toggleSeason('current')">Aranjamente personalizate</div>
+            </div>
+
+            <hr class="thick-line">
+
+            <section id="welcome">
+                <h2>În plus față de ofertele sezoniere, avem și o varietate de produse disponibile pentru vânzare.</h2>
+                <h3>Aceasta include: Trandafiri criogenați, Flori de mătase, Aranjamente în ghiveci etc!</h3>
+            </section>
+
+            <div class="season-boxes">
+
+                <div class="season" onclick="toggleSeason('cryogenic')">Trandafiri criogenați / Anul Nou</div>
+                <div class="season" onclick="toggleSeason('artificial')">Flori artificiale</div>
+                <div class="season" onclick="toggleSeason('soap')">Flori de săpun </div>
+                <div class="season" onclick="toggleSeason('silk')">Flori de mătase</div>
+                <div class="season" onclick="toggleSeason('succulent')">Plante suculente</div>
+                <div class="season" onclick="toggleSeason('potted')">Aranjamente în ghiveci' </div>
+            </div>
+
+            <div id="seasonal-content"></div>
+        </main>
+    </div>
+    <div class="footer">
+        <div class="footer-left">
+            <div class="opening-hour">Luni: închis</div>
+            <div class="opening-hour">Marți - Sâmbătă: 08:00 - 20:00</div>
+            <div class="opening-hour">Duminică: 08:00 - 15:00</div>
+            <!-- Abbreviated versions -->
+            <div class="opening-hour abbreviated">L: închis</div>
+            <div class="opening-hour abbreviated">M-S: 08:00 - 20:00</div>
+            <div class="opening-hour abbreviated">D: 08:00 - 15:00</div>
+        </div>
+        <div class="footer-center">
+            <div style="text-align: center;">Contact: 0748589812</div>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 5px;">
+                <a href="https://www.facebook.com/Margareta.margarete.5/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" style="width: 40px; height: 40px;" />
+                </a>
+                <span style="margin: 0 10px;">|</span>
+                <a href="https://www.instagram.com/tery.costea.7?igsh=MTh3bXVwYmowdm0xZQ==" target="_blank" rel="noopener noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" style="width: 40px; height: 40px;" />
+                </a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div>Str. Margaretelor nr.5</div>
+            <div>Sâncraiu de Mureș</div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

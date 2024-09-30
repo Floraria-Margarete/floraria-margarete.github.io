@@ -2,7 +2,7 @@ function toggleSeason(season) {
     const seasonalContent = document.getElementById('seasonal-content');
     seasonalContent.innerHTML = ''; // Clear previous content
 
-  const images = {
+    const images = {
         xmas: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Xmas/xmas1.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Xmas/xmas2.webp",
@@ -21,35 +21,23 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Xmas/xmas15.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Xmas/xmas16.webp",
         ],
-        
-        graduation: [  
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad1.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad2.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad3.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad4.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad5.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad6.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad7.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad8.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad9.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad10.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad11.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad12.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad13.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad14.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad15.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad16.webp",  
-        ],
-        birthday: [
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd1.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd2.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd3.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd4.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd5.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd6.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd7.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd8.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd9.webp",
+        easter: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es1.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es2.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es3.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es4.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es5.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es6.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es7.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es8.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es9.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es10.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es11.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es12.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es13.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es14.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es15.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es16.webp",
         ],
         halloween: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal.webp",
@@ -69,6 +57,42 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal15.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal16.webp",
         ],
+        graduation: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad1.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad2.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad3.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad4.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad5.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad6.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad7.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad8.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad9.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad10.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad11.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad12.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad13.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad14.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad15.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/grad16.webp",
+        ],
+        birthday: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd1.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd2.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd3.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd4.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd5.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd6.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd7.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd8.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd9.webp",
+        ],
+        valentines: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd1.webp",
+        ],
+        martie: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd1.webp",
+
+        ],
         wedding: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/wed1.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/wed2.webp",
@@ -85,26 +109,8 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/wed13.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/wed14.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/wed15.webp",
-    ],
-    easter: [
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es1.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es2.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es3.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es4.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es5.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es6.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es7.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es8.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es9.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es10.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es11.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es12.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es13.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es14.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es15.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/es16.webp",
-    ],
-    firstday: [
+        ],
+        firstday: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs1.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs2.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs3.webp",
@@ -121,8 +127,8 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs14.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs15.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs16.webp",
-    ],
-    current: [
+        ],
+        current: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per1.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per2.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per3.webp",
@@ -137,7 +143,28 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per12.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per13.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per14.webp",
-    ]
+        ],
+        cryogenic: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per1.webp",
+
+        ],
+        artificial: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per1.webp",
+        ],
+        soap: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per1.webp",
+        ],
+        silk: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per1.webp",
+
+        ],
+        succulent: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per1.webp",
+        ],
+        potted: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per1.webp",
+
+        ],
     };
 
     if (images[season]) {
@@ -188,15 +215,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Add back the .html extension if it's missing
+if (window.location.pathname.endsWith("/Welcome")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("/Welcome", "/welcome.html"));
+}
+if (window.location.pathname.endsWith("/Location")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("/Location", "/location.html"));
+}
+if (window.location.pathname.endsWith("/Store")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("/Store", "/store.html"));
+}
+if (window.location.pathname.endsWith("/Seasonal")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("/Seasonal", "/seasonal.html"));
+}
+
 if (window.location.pathname.endsWith("welcome.html")) {
     window.history.replaceState(null, "", window.location.pathname.replace("welcome.html", "Welcome"));
 }
 if (window.location.pathname.endsWith("location.html")) {
     window.history.replaceState(null, "", window.location.pathname.replace("location.html", "Location"));
 }
-if (window.location.pathname.endsWith("AboutMe.html")) {
-    window.history.replaceState(null, "", window.location.pathname.replace("AboutMe.html", "Store"));
+if (window.location.pathname.endsWith("store.html")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("store.html", "Store"));
 }
 if (window.location.pathname.endsWith("seasonal.html")) {
     window.history.replaceState(null, "", window.location.pathname.replace("seasonal.html", "Seasonal"));
 }
+
