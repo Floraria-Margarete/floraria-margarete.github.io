@@ -188,10 +188,8 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs11.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs12.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs13.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs14.webp",
         ],
         current: [
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per1.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per2.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per3.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per4.webp",

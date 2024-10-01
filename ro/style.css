@@ -432,8 +432,8 @@ h2, h3 {
         align-items: center; /* Center content vertically */
         border: 3px solid #000;
         padding: 12px; /* Increased padding for larger boxes */
-        width: 95px; /* Increased width for each box */
-        height: 95px;
+        width: 110px; /* Increased width for each box */
+        height: 110px;
         text-align: center;
         cursor: pointer;
         margin: 25px; /* Increased space between boxes */
@@ -468,6 +468,7 @@ h2, h3 {
     flex-direction: column; /* Stack sections vertically */
     align-items: center; /* Center align the overall container */
     padding: 20px; /* Add padding around the container */
+    margin-bottom: -40px;
 }
 
 .about-section {
@@ -510,7 +511,7 @@ h2, h3 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
     border: 4px transparent #000000; /* Optional: border for the box */
     border-radius: 15px; /* Optional: rounded corners */
-    margin: 80px;
+    margin: 20px;
 }
 
 .opening-hours-container {
@@ -550,7 +551,7 @@ h2, h3 {
     }
 
     .about-box {
-        text-align: justify; /* Align text to the left */
+        text-align: center; /* Align text to the left */
         font-weight: bold; /* Make all text bold */
         max-width: 90%; /* Set max width for mobile */
         font-size: 19px; /* Slightly smaller font size for mobile */
@@ -897,14 +898,22 @@ h2, h3 {
         width: 90%; /* Set a narrower width for the boxes */
         max-width: 500px; /* Optional: add a max-width to control size further */
     }
+
     .thick-line2 {
         border: none; /* Remove default border */
         height: 10px; /* Set thickness */
         max-width: 550px;
         background-color: #000000; /* Set line color */
-    width: 100%; /* Set line width */
+        width: 100%; /* Set line width */
     }
 }
+
 .contact-heading {
     text-decoration: underline; /* Underline the text */
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-label {
+        display: none;
+    }
 }
