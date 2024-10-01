@@ -188,6 +188,16 @@ html, body {
     width: 100%; /* Set line width */
 }
 
+.thick-line2 {
+    border: none; /* Remove default border */
+    width: 10px; /* Set thickness (becomes the "width" of the vertical line) */
+    height: 250px; /* Set the height (length of the vertical line) */
+    background-color: #000000; /* Set line color */
+    display: inline-block; /* Ensure the line is treated as a block-level element */
+    vertical-align: bottom; /* Align the line vertically */
+}
+
+
 /* Seasonal Boxes Styles */
 #seasonal-content {
     display: flex;
@@ -207,10 +217,14 @@ html, body {
 }
 
     .image-box img {
-        width: 100%; /* Full width of the parent container */
-        max-width: 350px; /* Increased maximum width for larger images */
-        height: 350px; /* Maintain aspect ratio */
-        margin: 5px; /* Space between images */
+        max-width: 100%; /* Prevent the image from exceeding the width of the container */
+        max-height: 55vh; /* Set a reasonable maximum height (50% of the viewport height) */
+        height: auto; /* Keep the height proportional (aspect ratio) */
+        width: auto; /* Let the width scale based on the height */
+        object-fit: contain; /* Ensure the image does not stretch or distort */
+        display: block; /* Removes the gap at the bottom of the image */
+        margin: 0 auto; /* Center the image horizontally */
+        margin-bottom: 25px;
     }
 
 /* Seasonal Boxes Styles */
@@ -448,14 +462,6 @@ h2, h3 {
             display: block; /* Show the abbreviated text */
         }
 }
-
-@media (max-width: 576px) {
-    #seasonal-content img {
-        width: calc(100% - 10px); /* One image per row */
-        max-width: calc(100% - 10px);
-    }
-}
-
 
 .about-container {
     display: flex;
@@ -890,6 +896,14 @@ h2, h3 {
     .contact-section {
         width: 90%; /* Set a narrower width for the boxes */
         max-width: 500px; /* Optional: add a max-width to control size further */
+    }
+
+    .thick-line2 {
+        border: none; /* Remove default border */
+        height: 10px; /* Set thickness */
+        max-width: 550px;
+        background-color: #000000; /* Set line color */
+        width: 100%; /* Set line width */
     }
 }
 

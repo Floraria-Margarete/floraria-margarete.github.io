@@ -40,23 +40,23 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/img15.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Easter/img16.webp",
         ],
-        halloween: [
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal2.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal3.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal4.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal5.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal6.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal7.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal8.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal9.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal10.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal11.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal12.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal13.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal14.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal15.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Halloween/hal16.webp",
+        toamna: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img1.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img2.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img3.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img4.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img5.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img6.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img7.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img8.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img9.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img10.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img11.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img12.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img13.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img14.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img15.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img16.webp",
         ],
         graduation: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/img1.webp",
@@ -77,15 +77,22 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/img16.webp",
         ],
         birthday: [
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd1.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd2.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd3.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd4.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd5.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd6.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd7.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd8.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birthdays/bd9.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img1.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img2.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img3.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img4.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img5.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img6.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img7.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img8.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img9.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img10.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img11.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img12.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img13.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img14.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img15.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img16.webp",
         ],
         valentines: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Valentines/img1.webp",
@@ -149,6 +156,24 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img23.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img24.webp",
         ],
+        baptism: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img1.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img2.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img3.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img4.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img5.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img6.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img7.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img8.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img9.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img10.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img11.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img12.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img13.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img14.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img15.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Baptism/img16.webp",
+        ],
         firstday: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs1.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs2.webp",
@@ -164,8 +189,6 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs12.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs13.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs14.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs15.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/First/fs16.webp",
         ],
         current: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per1.webp",
@@ -319,32 +342,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Add back the .html extension if it's missing
-if (window.location.pathname.endsWith("/Welcome")) {
-    window.history.replaceState(null, "", window.location.pathname.replace("/Welcome", "/welcome.html"));
-}
-if (window.location.pathname.endsWith("/Location")) {
-    window.history.replaceState(null, "", window.location.pathname.replace("/Location", "/location.html"));
-}
-if (window.location.pathname.endsWith("/Store")) {
-    window.history.replaceState(null, "", window.location.pathname.replace("/Store", "/store.html"));
-}
-if (window.location.pathname.endsWith("/Seasonal")) {
-    window.history.replaceState(null, "", window.location.pathname.replace("/Seasonal", "/seasonal.html"));
-}
-
-if (window.location.pathname.endsWith("welcome.html")) {
-    window.history.replaceState(null, "", window.location.pathname.replace("welcome.html", "Welcome"));
-}
-if (window.location.pathname.endsWith("location.html")) {
-    window.history.replaceState(null, "", window.location.pathname.replace("location.html", "Location"));
-}
-if (window.location.pathname.endsWith("store.html")) {
-    window.history.replaceState(null, "", window.location.pathname.replace("store.html", "Store"));
-}
-if (window.location.pathname.endsWith("seasonal.html")) {
-    window.history.replaceState(null, "", window.location.pathname.replace("seasonal.html", "Seasonal"));
-}
 
 
 // Scroll to the top of the welcome section
