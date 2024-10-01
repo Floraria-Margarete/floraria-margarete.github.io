@@ -57,6 +57,11 @@
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img14.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img15.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img16.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img17.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img18.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img19.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img20.webp",
+
         ],
         graduation: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/img1.webp",
@@ -75,6 +80,7 @@
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/img14.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/img15.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/img16.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/img17.webp",
         ],
         birthday: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img1.webp",
@@ -93,6 +99,8 @@
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img14.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img15.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/img16.webp",
+
+
         ],
         valentines: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Valentines/img1.webp",
@@ -203,6 +211,8 @@
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per12.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per13.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per14.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Personal/per1.webp",
+
         ],
         cryogenic: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Cryogenic/img1.webp",
