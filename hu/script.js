@@ -49,7 +49,6 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img6.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img7.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img8.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img9.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img10.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img11.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Toamna/img12.webp",
@@ -147,7 +146,6 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img6.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img7.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img8.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img9.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img10.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img11.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img12.webp",
@@ -362,3 +360,4 @@ function scrollToTop() {
 function hideBackToTop() {
     document.getElementById('backToTop').style.display = "none"; // Hide button
 }
+
