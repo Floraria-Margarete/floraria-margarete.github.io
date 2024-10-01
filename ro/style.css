@@ -437,7 +437,7 @@ h2, h3 {
         text-align: center;
         cursor: pointer;
         margin: 13px; /* Increased space between boxes */
-        font-size: 15px; /* Increased font size */
+        font-size: 20px; /* Increased font size */
         background-color: #ebeced; /* Set background to white */
         transition: background-color 0.3s; /* Smooth transition */
     }
