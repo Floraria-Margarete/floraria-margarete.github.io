@@ -207,7 +207,7 @@ html, body {
     max-width: 100%; /* Ensure content does not exceed viewport */
 }
 
-.image-box {
+.image-box, .video-box {
     border-radius: 24px; /* Rounded corners */
     padding: 10px; /* Space inside the box */
     margin: 10px; /* Space outside the box */
@@ -216,7 +216,7 @@ html, body {
     justify-content: center; /* Center images */
 }
 
-    .image-box img {
+    .image-box img, .video-box video {
         max-width: 100%; /* Prevent the image from exceeding the width of the container */
         max-height: 55vh; /* Set a reasonable maximum height (50% of the viewport height) */
         height: auto; /* Keep the height proportional (aspect ratio) */

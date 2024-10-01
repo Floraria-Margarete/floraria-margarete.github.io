@@ -3,6 +3,16 @@
     seasonalContent.innerHTML = ''; // Clear previous content
     document.getElementById('backToTop').style.display = "block"; // Show button
 
+    const video = {
+        graduation: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/vid1.webm"
+        ],
+        birthday: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/vid1.webm",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/vid2.webm",
+        ],
+    };
+
     const images = {
         xmas: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Xmas/img1.webp",
@@ -310,6 +320,21 @@
             box.appendChild(img);
         });
         seasonalContent.appendChild(box);
+    }
+
+    // Add videos
+    if (video[season]) {
+        const videoBox = document.createElement('div');
+        videoBox.className = 'video-box'; // Single box for all videos
+        video[season].forEach(videoUrl => {
+            const vid = document.createElement('video');
+            vid.src = videoUrl;
+            vid.controls = true;  // Add play/pause controls
+            vid.width = 320;      // Set video width (optional)
+            vid.height = 240;     // Set video height (optional)
+            videoBox.appendChild(vid);
+        });
+        seasonalContent.appendChild(videoBox);
     }
 
     // Scroll to the seasonal content
