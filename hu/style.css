@@ -947,3 +947,8 @@ h2, h3 {
     cursor: pointer; /* Pointer cursor on hover */
     display: flex; /* Use flexbox for alignment */
 }
+
+
+.video-box video {
+    /* margin-right: 100px; */ /* Add space to the right of each video */
+}

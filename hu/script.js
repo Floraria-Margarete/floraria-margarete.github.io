@@ -7,8 +7,10 @@ function toggleSeason(season) {
         graduation: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Grad/vid1.webm"
         ],
-        birthday: [
+        baptism: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/vid1.webm",
+        ],
+        wedding:[
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/vid2.webm",
         ],
     };

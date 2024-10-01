@@ -950,5 +950,5 @@ h2, h3 {
 
 
 .video-box video {
-    margin-right: 100px; /* Add space to the right of each video */
+    /* margin-right: 100px; */ /* Add space to the right of each video */
 }
