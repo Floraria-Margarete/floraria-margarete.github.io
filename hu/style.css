@@ -707,6 +707,14 @@ h2, h3 {
         font-size: 18px; /* Smaller font size for mobile */
     }
 
+    .opening-hours-container {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+
+    .contact-details {
+        font-size: 18px;
+    }
+
     .opening-hours {
         flex-direction: column; /* Stack opening hours vertically */
         gap: 15px; /* Adjust space between items */
