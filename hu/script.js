@@ -10,7 +10,7 @@ function toggleSeason(season) {
         baptism: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/vid1.webm",
         ],
-        wedding:[
+        wedding: [
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Birth/vid2.webm",
         ],
     };
@@ -158,7 +158,6 @@ function toggleSeason(season) {
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img6.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img7.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img8.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img10.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img11.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img12.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img13.webp",
