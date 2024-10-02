@@ -1,4 +1,4 @@
-﻿function toggleSeason(season) {
+function toggleSeason(season) {
     const seasonalContent = document.getElementById('seasonal-content');
     seasonalContent.innerHTML = ''; // Clear previous content
     document.getElementById('backToTop').style.display = "block"; // Show button
@@ -158,7 +158,6 @@
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img6.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img7.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img8.webp",
-            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img10.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img11.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img12.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Wedding/img13.webp",
@@ -387,4 +386,3 @@ function scrollToTop() {
 function hideBackToTop() {
     document.getElementById('backToTop').style.display = "none"; // Hide button
 }
-
