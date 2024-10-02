@@ -1,4 +1,4 @@
-function toggleSeason(season) {
+﻿function toggleSeason(season) {
     const seasonalContent = document.getElementById('seasonal-content');
     seasonalContent.innerHTML = ''; // Clear previous content
     document.getElementById('backToTop').style.display = "block"; // Show button
@@ -386,3 +386,4 @@ function scrollToTop() {
 function hideBackToTop() {
     document.getElementById('backToTop').style.display = "none"; // Hide button
 }
+
