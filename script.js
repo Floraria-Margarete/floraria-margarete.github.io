@@ -327,6 +327,20 @@
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Potted/img15.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/Potted/img16.webp",
         ],
+        news: [
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img1.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img2.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img3.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img4.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img5.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img6.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img7.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img8.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img9.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img10.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img11.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img12.webp",
+        ],
     };
 
     if (images[season]) {
