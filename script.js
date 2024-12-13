@@ -340,6 +340,10 @@
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img10.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img11.webp",
             "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img12.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img13.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img14.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img15.webp",
+            "https://raw.githubusercontent.com/floraria-margarete/floraria-margarete/main/photos/News/img16.webp",
         ],
     };
 
